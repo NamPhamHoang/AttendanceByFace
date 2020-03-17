@@ -1,0 +1,35 @@
+.indispensable_section {
+  margin-top: 60px;
+
+  p {
+    padding: 0px 20px;
+  }
+
+  .icon {
+    width: 130px;
+    height: 80px;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  .icon.autoBuy {
+    padding-top: 30px;
+    width: 120px;
+  }
+
+  .icon.autoSell {
+    padding-top: 30px;
+    width: 135px;
+  }
+
+  .icon.autoStop {
+    padding-top: 30px;
+    width: 138px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 80px;
+  }
+}

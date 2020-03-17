@@ -1,0 +1,39 @@
+.try_section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: -0px;
+  text-align: -webkit-center;
+
+  .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .description {
+    color: #ffffff !important;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .telegram_button .label {
+    margin: 7px;
+  }
+
+  .separator {
+    height: 500px;
+    background-image: url("/images/get-started-bg.svg");
+    margin-top: -20px;
+  }
+
+  @media (max-width: 1024px) {
+    box-shadow: none;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+}

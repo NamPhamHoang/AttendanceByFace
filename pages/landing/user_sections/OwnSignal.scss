@@ -1,0 +1,102 @@
+.own-s {
+  padding: 50px 0 100px 0;
+  .line-wrapper{ 
+    margin-bottom: 30px;
+  }
+  h2 {
+      width: 100%;
+      height: auto;
+      font-family: Lato;
+      font-size: 36px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #222220;
+      margin-bottom: 0;
+      padding: 0 15px;
+  }
+  .trade-list-box {
+      display: flex;
+      justify-content: space-around;
+      background: url('/images/user/bg-handleTrade.png');
+      padding: 100px 50px;
+      background-repeat: no-repeat;
+      background-position: center;
+      flex-wrap: wrap;
+
+      .t-box {
+          width: 325px;
+          height: 385px;
+          border-radius: 30px;
+          box-shadow: 3px 8px 24px 1px rgba(0, 0, 0, 0.08);
+          background-color: #ffffff;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 0 10px;
+          img {
+              margin-top: 35px;
+              width: 119px;
+              height: auto;
+          }
+          .text-subtitle {
+              margin-top: 20px;
+              margin-bottom: 35px;
+          }
+          .text-note {
+              width: 100%;
+              height: 133px;
+              font-family: Lato;
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              text-align: center;
+              color: #6a6a6a;
+              margin-left: 0;
+          }
+          }
+      }
+  }
+  @media (max-width: 992px) {
+      .own-s { 
+          h2 {
+              margin-bottom: 40px;
+          }
+          .trade-list-box {
+              margin-top: 25px;
+              background-size: 100%;
+              background-position: center;
+              padding: 15px 25px;
+              .t-box {
+                  width: 80%;
+                  height: fit-content;
+                  margin-bottom: 25px;
+                  img {
+                      width: 150px;
+                      height: auto;
+                  }
+                  .text-note{
+                      font-size: 30px;
+                  }
+              }
+          }
+      }
+  }
+  @media (max-width: 767px) {
+      .own-s { 
+          .trade-list-box .t-box .text-note{
+              font-size: 20px;
+                  }
+              }
+          }
+  @media (max-width: 552px) {
+
+  }
+
+

@@ -1,0 +1,119 @@
+.partner-footer {
+  padding: 100px 0 100px 0;
+}
+.partner-footer .line-wrapper .line {
+    border-color: #121b2a;
+}
+.p-f-content {
+  padding-top: 40px;
+  margin-bottom: 65px;
+  h3 {
+    width: 100%;
+    height: auto;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    
+  }
+  h2 {
+    width: 734px;
+    height: auto;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222220;
+    margin: 0 auto;
+  }
+}
+.f-listHub {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .f-l-content {
+    padding: 10px 20px 0 0;
+    width: 356px;
+
+    h3 {
+      width: 286px;
+      height: 25px;
+      font-family: Lato;
+      font-size: 21px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #222222;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: Lato;
+      font-size: 21px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.9;
+      letter-spacing: normal;
+      color: #6a6a6a;
+    }
+  }
+}
+.f-image {
+  width: 120px;
+  height: 119px;
+  margin: 80px auto;
+  margin-bottom: 40px;
+  background: url('/images/partner/footerImage.png');
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+@media (max-width: 1200px){
+  
+}
+@media (max-width: 1080px){
+  
+  .f-listHub {
+    .f-l-content {
+      width: 100%;
+      font-size: 32px;
+    }
+  }
+}
+@media (max-width: 967px){
+  .p-f-content {
+    h3, h2 {
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+  }
+  
+}
+@media (max-width: 776px){
+  .f-listHub .f-l-content h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 552px){
+  .partner-footer {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1920px){
+  .partner-footer {
+    padding-top: 0;
+  }
+}
