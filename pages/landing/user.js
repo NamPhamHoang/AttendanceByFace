@@ -4,6 +4,6 @@ export default () => {
     return (
         <>
         <Header />
-        <div>user</div></>
+        <h1>user</h1></>
     )
 }

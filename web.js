@@ -100,15 +100,6 @@ app.prepare().then(() => {
   server.get('/pt/:slug', async (req, res) => {
     return await render(req, res, 'pt', '/landing/' + req.params.slug)
   })
-  server.get('/team', async (req, res) => {
-    return await render(req, res, 'en', '/landing/team')
-  })
-  server.get('/terms', async (req, res) => {
-    return await render(req, res, 'en', '/landing/terms')
-  })
-  server.get('/privacy', async (req, res) => {
-    return await render(req, res, 'en', '/landing/privacy')
-  })
   server.get('/user', async(req, res) => {
     return await render(req,res, 'en',  '/landing/user')
   })
