@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class Header extends Component {
+export class subjectCode extends Component {
     render() {
         return (
-            <div>
+            <div className="col-6">
                 
             </div>
         )
     }
 }
 
-export default Header
+export default subjectCode
