@@ -7,7 +7,7 @@ class Home extends React.Component {
         return (
             <span>
                 <Main />
-                <h1>Main</h1>
+                <h1><a href = "/user">Main</a></h1>
             </span >
         )
     }
