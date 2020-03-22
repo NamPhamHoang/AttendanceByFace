@@ -9,7 +9,7 @@ class headerBelow extends Component {
                     <div className='col-6'>
                         <div className="row">
                             <div className="wrap-logo">
-                                <img src= './logo.png'/> 
+                                <img src = "./public/images/logo.png"/> 
                             </div>
                             <ul>
                                 <li>
