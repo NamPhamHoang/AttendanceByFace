@@ -104,6 +104,17 @@
                 "description": "I'm a crypto trading bot that understands human language to help you manage your crypto signals on Telegram, automate your tradings and make sure you never miss a profit.",
                 "label_button": "Try for free"
             },
+            "menu": {
+                "about": "About",
+                "signals": "Signals",
+                "pricing": "Pricing",
+                "team": "Team",
+                "helpcenter": "Help Center",
+                "api": "API",
+                "contactus": "Contact Us",
+                "virtualassistants": "Virtual Assistants",
+                "blog": "Blog"
+            },
             "powered": {
                 "title": "Powered by artificial inteligence",
                 "description": "Simply type “Hi Anny” and she will help you with your options.",
@@ -134,15 +145,15 @@
                 "label_description_profitability": "Anny consolidates your position on all your active signals to provide you with profit/loss overview, broken down by signal provider and coin trade."
             },
             "partners": {
-                "title": "Integrated with top signals providers",
-                "label_premium": "Auto buy!",
-                "label_partner1": "Crypto Investidor",
-                "label_partner2": "Crypto Coin Coach",
-                "label_partner3": "VIP Whales Club",
-                "label_partner4": "Quality Signals",
-                "label_partner5": "Crypto Drivers",
-                "label_partner6": "Bat Signals",
-                "label_partner7": "Crypto Trades"
+                "title": "ATTENDANCE BY FACE RECOGNITION",
+                "Login_title": "LOGIN",
+                "user_name": "username",
+                "pass_word": "password",
+                "label_checkbox": "Remember Me",
+                "btn_login": "Login",
+                "label_note": "Don't have an account?",
+                "label_signUp": "Sign Up",
+                "label_Forgot your password?" : "Forgot your password?"
             },
             "not_conviced": {
                 "title": "Reliable and Trustworthy",

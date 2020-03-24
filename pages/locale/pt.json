@@ -102,7 +102,7 @@
             "mainbox": {
                 "title": "Olá 👋, eu sou a Anny",
                 "description": "Sou um robô de crypto trading que entende a linguagem humana, para ajudá-lo a gerenciar seus sinais de criptomoedas no Telegram, automatizar seus tradings e garantir que você nunca perca um lucro.",
-                "label_button": "Experimente grátis"
+                "label_button": "Dùng thử"
             },
             "powered": {
                 "title": "Movido a inteligência artificial",
@@ -117,6 +117,17 @@
                     "description": "Anny monitora os preços em intervalo de 1 segundo, 24/7 e avisa quando um sinal atinge a faixa de compra e quando os targets e lucros são alcançados.",
                     "note": "Anny fala vários idiomas"
                 }
+            },
+            "menu": {
+                "about": "Giới thiệu",
+                "signals": "Tài liệu",
+                "pricing": "Giá cả",
+                "team": "Nhóm",
+                "helpcenter": "Trung tâm hỗ trợ",
+                "api": "API",
+                "contactus": "Liên lạc",
+                "virtualassistants": "Trợ lí ảo",
+                "blog": "Blog"
             },
             "indispensable": {
                 "title": "Indispensável para profissionais",
@@ -134,15 +145,15 @@
                 "label_description_profitability": "A Anny consolida sua posição em todos os seus sinais ativos, para fornecer uma visão geral de lucros e prejuízos, segmentado por provedor de sinais e moedas."
             },
             "partners": {
-                "title": "Integrado com os melhores provedores de sinais",
-                "label_premium": "Auto buy!",
-                "label_partner1": "Crypto Investidor",
-                "label_partner2": "Crypto Coin Coach",
-                "label_partner3": "VIP Whales Club",
-                "label_partner4": "Quality Signals",
-                "label_partner5": "Crypto Drivers",
-                "label_partner6": "Bat Sinais",
-                "label_partner7": "Crypto Trades"
+                "title": "ĐIỂM DANH BẰNG KHUÔN MẶT",
+                "Login_title": "ĐĂNG NHẬP",
+                "user_name": "Tên đăng nhâp",
+                "pass_word": "Mật khẩu",
+                "label_checkbox": "Nhớ tài khoản",
+                "btn_login": "Đăng nhập",
+                "label_note": "Đăng kí tài khoản",
+                "label_signUp": "Đăng kí",
+                "label_Forgot your password?" : "Quên mật khẩu"
             },
             "not_conviced": {
                 "title": "Tecnologia de ponta a seu serviço 24/7",

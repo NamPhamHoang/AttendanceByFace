@@ -137,7 +137,7 @@ class Header extends React.Component {
                 'helpcenter': 'https://annydecrypto.zendesk.com/hc/en-us'
             },
             'pt': {
-                'name': 'Portuguese (PT)',
+                'name': 'Vietnamese (VN)',
                 'helpcenter': 'https://annydecrypto.zendesk.com/hc/pt-br'
             },
         }
@@ -150,19 +150,19 @@ class Header extends React.Component {
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 {false && <NavItem>
-                                    <NavLink href={langPath + '#signals'}>{i18n.t("landing:menu.signals")}</NavLink>
+                                    <NavLink href={langPath + '#signals'}>{i18n.t("landing:mainpage.menu.signals")}</NavLink>
                                 </NavItem>}
                                 <NavItem>
-                                    <NavLink href={langPath + '#pricing'}>{i18n.t("landing:menu.pricing")}</NavLink>
+                                    <NavLink href={langPath + '#pricing'}>{i18n.t("landing:mainpage.menu.pricing")}</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href={langParams[lang].helpcenter} target="_blank">{i18n.t("landing:menu.helpcenter")}</NavLink>
+                                    <NavLink href={langParams[lang].helpcenter} target="_blank">{i18n.t("landing:mainpage.menu.helpcenter")}</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://api.annydecrypto.com/?version=latest" target="_blank">{i18n.t("landing:menu.api")}</NavLink>
+                                    <NavLink href="https://api.annydecrypto.com/?version=latest" target="_blank">{i18n.t("landing:mainpage.menu.api")}</NavLink>
                                 </NavItem>                               
                                 <NavItem>
-                                    <NavLink href="javascript:void(0)" onClick={() => this.handleContactUs()}>{i18n.t("landing:menu.contactus")}</NavLink>
+                                    <NavLink href="javascript:void(0)" onClick={() => this.handleContactUs()}>{i18n.t("landing:mainpage.menu.contactus")}</NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="try" href="https://t.me/AnnyDeCrypto_bot" target="_blank">{i18n.t("landing:mainpage.mainbox.label_button")}</NavLink>

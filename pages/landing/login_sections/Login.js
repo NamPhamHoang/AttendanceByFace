@@ -1,4 +1,5 @@
 import React from 'react';
+import i18n from 'i18next';
 import { Container } from 'next/dist/pages/_app';
 import './Login.scss'
 
@@ -13,10 +14,10 @@ const Login = () => {
       
    
         <div className="d-flex justify-content-center h-100">
-            <h1>ATTENDANCE BY FACE RECOGNITION</h1>
+            <h1>{i18n.t("landing:mainpage.partners.title")}</h1>
             <div className="card">
                 <div className="card-header">
-                    <h3>Sign In</h3>
+                    <h3>{i18n.t("landing:mainpage.partners.Login_title")}</h3>
                    
                 </div>
                 <div className="card-body">
@@ -25,29 +26,29 @@ const Login = () => {
                             <div className="input-group-prepend">
                                 <span className="input-group-text"><i className="fas fa-user"></i></span>
                             </div>
-                            <input type="text" className="form-control" placeholder="username"/>
+                            <input type="text" className="form-control" placeholder={i18n.t("landing:mainpage.partners.user_name")}/>
                             
                         </div>
                         <div className="input-group form-group">
                             <div className="input-group-prepend">
                                 <span className="input-group-text"><i className="fas fa-key"></i></span>
                             </div>
-                            <input type="password" className="form-control" placeholder="password"/>
+                            <input type="password" className="form-control" placeholder={i18n.t("landing:mainpage.partners.pass_word")}/>
                         </div>
                         <div className="row align-items-center remember">
-                            <input type="checkbox"/>Remember Me
+                            <input type="checkbox"/>{i18n.t("landing:mainpage.partners.label_checkbox")}
                         </div>
                         <div className="form-group">
-                            <input type="submit" value="Login" className="btn float-right login_btn"/>
+                            <input type="submit" value={i18n.t("landing:mainpage.partners.btn_login")} className="btn float-right login_btn"/>
                         </div>
                     </form>
                 </div>
                 <div className="card-footer">
                     <div className="d-flex justify-content-center links">
-                        Don't have an account?<a href="#">Sign Up</a>
+                    {i18n.t("landing:mainpage.partners.label_note")}<a href="#"> {i18n.t("landing:mainpage.partners.label_signUp")}</a>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <a href="#">Forgot your password?</a>   
+                        <a href="#"> {i18n.t("landing:mainpage.partners.label_Forgot your password?")}</a>   
                     </div>
                 </div>
             </div>
