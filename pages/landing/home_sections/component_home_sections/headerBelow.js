@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import './belowHeader.scss';
-import logo from ''
-
 class headerBelow extends Component {
     render() {
         return (
@@ -10,20 +8,20 @@ class headerBelow extends Component {
                     <div className='col-6'>
                         <div className="row">
                             <div className="wrap-logo">
-                                <img src = "./public/images/logo.png"/> 
+                                <img src= '/images/logo.png'/> 
                             </div>
-                            <ul>
-                                <li>
+                            <ul className="pl-0">
+                                <li className="mt-2">
                                     <h2>Duy Tan</h2>
                                 </li>
                                 <li>
-                                    University
+                                    <h5>University</h5>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className='col-6'>
-                        <h1>
+                        <h1 className="pl-0">
                             FACE REGONITION
                         </h1>
                     </div>

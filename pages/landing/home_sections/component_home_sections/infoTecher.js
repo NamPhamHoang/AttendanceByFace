@@ -5,22 +5,25 @@ export class infoTecher extends Component {
         return (
             <div className="row">
                 <div className="col-4 ">
-                    <img></img>
+                    <div className="wrap-img-teacher">
+                        <img></img> 
+                    </div>
+                   
                 </div>
                 <div className="col-8 ">
                     
                     <ul>
                         <li>
-                            Name: 
+                            Name: Nguyen Duc Man
                         </li>
                         <li>
-                            Name: 
+                            Age: 42
                         </li>
                         <li>
-                            Name: 
+                            Gmail: nguyenducman@gmail.com
                         </li>
                         <li>
-                            Name: 
+                            Level: Thac Si
                         </li>
                     </ul>
                 </div>

@@ -30,7 +30,7 @@ class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>Anny De Crypto</title>
+          <title>AttendaceByFace</title>
           <meta httpEquiv="content-language" content={i18n.language} />
           <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
           <meta charSet="utf-8" />

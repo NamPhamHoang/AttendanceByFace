@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
-import DataSutent from '../data/dataStudent';
+import DataSutent from './dataStudent';
 
 const studentList = () => {
   
@@ -9,6 +9,7 @@ const studentList = () => {
 
     <MDBDataTable
       scrollY
+      headerColor="elegant-color"
       maxHeight="200px"
       striped
       bordered

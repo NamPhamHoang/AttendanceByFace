@@ -69,7 +69,7 @@ app.prepare().then(() => {
   server.use(session(sessionConfig));
 
   // Define a pasta de conteúdo público
-  server.use('/', express.static('public'));
+  server.use('/', express.static('public')); // do cai ham nay ne roi t out day
 
   // Se o protocolo do servidor estiver configurado para HTTPS
   // Faz o redirecionamento de "www" para "sem www"

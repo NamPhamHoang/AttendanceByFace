@@ -1,7 +1,7 @@
 # AttendanceByFace
 This repository is about how to attent by face recognition
 
-yarn install
+npm install
 yarn start
 
 localhost:4000
