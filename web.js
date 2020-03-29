@@ -109,6 +109,7 @@ app.prepare().then(() => {
   server.get('/', async (req, res) => {
     return await render(req, res, 'en', '/landing/home')
   })
+ 
   
   // Endpoint de mapeamento genérico para todas as demais requisições de páginas
   // (Mapeamento para handle do Next)

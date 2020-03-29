@@ -22,7 +22,6 @@ class Main extends React.Component {
         return (
             
             <div className="main_section container"> 
-                <Header/>
                 <HeaderBelow/>
                 <div className="row">
                     <div className="col-7"> <InfoTecher/></div>

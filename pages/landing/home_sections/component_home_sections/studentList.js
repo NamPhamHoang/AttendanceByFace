@@ -5,8 +5,6 @@ import DataSutent from './dataStudent';
 const studentList = () => {
   
   return (
-  
-
     <MDBDataTable
       scrollY
       headerColor="elegant-color"

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('/public/images/train_travel_illustration-wallpaper-1366x768\ 1.png');
+background-image: url('/images/backwhite.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -78,10 +78,11 @@ margin-left: 4px;
 
 .login_section {
     margin-top : 100px;
-    background-image: url('/public/images/train_travel_illustration-wallpaper-1366x768\ 1.png');
+    padding-bottom: 2rem;
 }
 
-h1 {
+.back-login {
     margin-right: 40px;
-    background-image: url('/public/images/train_travel_illustration-wallpaper-1366x768\ 1.png');
+    text-align: center;
+    margin: 0 auto;
 }
