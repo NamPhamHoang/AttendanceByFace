@@ -7,32 +7,38 @@ const data = {
         width: 300
       },
       {
-        label: 'sex',
-        field: 'sex',
+        label: 'Gender',
+        field: 'gender',
         sort: 'asc',
         width: 50
       },
       {
-        label: 'Birthday',
-        field: 'birthday',
+        label: 'Join time',
+        field: 'jointime',
         sort: 'asc',
         width: 100
       },
       {
-        label: 'ID',
-        field: 'id',
+        label: 'Leave time',
+        field: 'leavetime',
         sort: 'asc',
-        width: 200
+        width: 100
       },
       {
-        label: 'Total',
-        field: 'total',
+        label: 'Duaration',
+        field: 'duaration',
         sort: 'asc',
-        width: 50
+        width: 100
       },
       {
         label: 'Sessions',
         field: 'sessions',
+        sort: 'asc',
+        width: 100
+      },
+      {
+        label: 'Attenliveness Score',
+        field: 'alScore',
         sort: 'asc',
         width: 100
       },
@@ -43,8 +49,8 @@ const data = {
         width: 100
       },
       {
-        label: 'wamring',
-        field: 'wamring',
+        label: 'warning',
+        field: 'warning',
         sort: 'asc',
         width: 100
       }
@@ -52,106 +58,108 @@ const data = {
     rows: [
       {
         name: 'Tiger Nixon',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Garrett Winters',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Ashton Cox',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
 
       },
       {
-        name: 'Cedric Kelly',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Airi Satou',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring:'2'
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Brielle Williamson',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Herrod Chandler',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Rhona Davidson',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration: '',
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Colleen Hurst',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration:'' ,
+        precent:'',
+        warning: ''
       }
       ,
       {
-        name: 'Rhona Davidson',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        name: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration: '',
+        precent:'',
+        warning: ''
       },
       {
-        name: 'Colleen Hurst',
-        sex: 'nam',
-        birthday: '2009/01/12',
-        id:5656465161,
-        total: '$86',
-        precent:'8%',
-        wamring: ''
+        nname: 'Tiger Nixon',
+        gender: 'nam',
+        jointime: '2009/01/12',
+        leavetime:'',
+        duaration: '',
+        precent:'',
+        warning: ''
       }
     
     ]
   };
+
+ 
   export default data;
