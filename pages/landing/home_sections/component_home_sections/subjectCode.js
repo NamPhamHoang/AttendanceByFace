@@ -2,19 +2,18 @@ import React, { Component } from 'react'
 
 export class subjectCode extends Component {
     render() {
-        var {dataSubjects} = this.props;    
-        var elmDataSubject = dataSubjects.map((elm, index)=>{
-            return <option key={index}>
-                        {elm.name}
-                    </option>
-        })
         return (
             <div className="col-6">
                 <div className="wrap-subjectCode">
-                    <label></label>
-                    <select>
-                       {elmDataSubject}
-                    </select>
+                    <div className="day-now">
+                        <label>2020 03 08</label>
+                    </div>
+                    <div className="name-subject">
+                    <label> Đồ Án CDIO </label>
+                    </div>
+                    <div className="zipcode-subject">
+                        <label>CMU-CS 447 HIS</label>
+                    </div>
                 </div>
             </div>
         )
