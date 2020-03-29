@@ -25,8 +25,8 @@ class Footer extends React.Component {
                         <div className="responsibly">
                             <p>{i18n.t("landing:footer.responsibly")}</p>
                             <div>
-                                <img src="/images/icon_gdpr.png" />
-                                <img src="/images/icon_ssl.png" />
+                                <img src="/images/mailIcon.png" />
+                                <img src="/images/mailIcon.png" />
                             </div>
                         </div>
                     </Col>

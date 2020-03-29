@@ -8,17 +8,38 @@ import axios from 'axios';
 class Login extends React.Component {
     constructor(props) {
         super(props);
-        this.setState = {
-            admin: []
+        this.state = {
+            user_name: "",
+            pass_word: "",
+            loginError: ""
         }
     };
-    componentDidMount() {
-        axios.get('/login')
-             .then(res => res.json())
-             .then(admin => this.setState({admin}, () => console.log("admin fetched")))
-             .catch(error => console.log(error));
-      };
 
+    handleChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+      }
+    
+    handleSubmit = (event) => {
+        event.preventDefault();
+        var users = this.props.users;
+        users.forEach(user => {
+            console.log(user)
+            if(user.user_name === this.state.user_name && user.pass_word === this.state.pass_word){
+                console.log("dung roi")
+
+                return <
+                    y
+                    
+                />
+            }
+            else {
+                console.log("sai roi")
+                return false;
+                }
+            })  
+        }
     render() {
         return ( 
         <div className="container login_section">
@@ -38,24 +59,38 @@ class Login extends React.Component {
                     
                     </div>
                     <div className="card-body">
-                        <form>
+                        <form onSubmit = {this.handleSubmit}>
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
                                     <span className="input-group-text"><i className="fas fa-user"></i></span>
                                 </div>
-                                <input type="text" className="form-control" placeholder={i18n.t("landing:mainpage.partners.user_name")}/>    
+                                <input 
+                                    type="text" 
+                                    className="form-control" 
+                                    placeholder={i18n.t("landing:mainpage.partners.user_name")} 
+                                    
+                                    name="user_name"
+                                    value = {this.state.email}
+                                    onChange = {this.handleChange}/>    
                             </div>
                             <div className="input-group form-group">
                                 <div className="input-group-prepend">
                                     <span className="input-group-text"><i className="fas fa-key"></i></span>
                                 </div>
-                                <input type="password" className="form-control" placeholder={i18n.t("landing:mainpage.partners.pass_word")}/>
+                                <input 
+                                    type="text" 
+                                    className="form-control" 
+                                    placeholder={i18n.t("landing:mainpage.partners.pass_word")} 
+                                    
+                                    name="pass_word"
+                                    value = {this.state.pass_word}
+                                    onChange = {this.handleChange}/>
                             </div>
                             <div className="row align-items-center remember">
                                 <input type="checkbox"/>{i18n.t("landing:mainpage.partners.label_checkbox")}
                             </div>
                             <div className="form-group">
-                                <input type="submit" value={i18n.t("landing:mainpage.partners.btn_login")} className="btn float-right login_btn"/>
+                                <button type="submit" className="btn float-right login_btn">{i18n.t("landing:mainpage.partners.btn_login")}</button>
                             </div>
                         </form>
                     </div>
