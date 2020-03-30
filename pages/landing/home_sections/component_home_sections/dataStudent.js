@@ -149,7 +149,7 @@ const data = {
         warning: ''
       },
       {
-        nname: 'Tiger Nixon',
+        name: 'Tiger Nixon',
         gender: 'nam',
         jointime: '2009/01/12',
         leavetime:'',
