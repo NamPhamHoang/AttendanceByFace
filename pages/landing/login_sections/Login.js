@@ -1,6 +1,7 @@
 import React from 'react';
 import i18n from 'i18next';
 import { Container } from 'next/dist/pages/_app';
+import { Redirect } from 'react-router-dom'
 import './Login.scss'
 import axios from 'axios';
 
@@ -25,18 +26,11 @@ class Login extends React.Component {
         event.preventDefault();
         var users = this.props.users;
         users.forEach(user => {
-            console.log(user)
             if(user.user_name === this.state.user_name && user.pass_word === this.state.pass_word){
-                console.log("dung roi")
-
-                return <
-                    y
-                    
-                />
+                location = "/pt"
             }
-            else {
-                console.log("sai roi")
-                return false;
+            else {    
+                  
                 }
             })  
         }
@@ -78,7 +72,7 @@ class Login extends React.Component {
                                     <span className="input-group-text"><i className="fas fa-key"></i></span>
                                 </div>
                                 <input 
-                                    type="text" 
+                                    type="password" 
                                     className="form-control" 
                                     placeholder={i18n.t("landing:mainpage.partners.pass_word")} 
                                     
