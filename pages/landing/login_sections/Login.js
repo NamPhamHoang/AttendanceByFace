@@ -27,7 +27,7 @@ class Login extends React.Component {
         var users = this.props.users;
         users.forEach(user => {
             if(user.user_name === this.state.user_name && user.pass_word === this.state.pass_word){
-                location = "/pt"
+                location = "/user"
             }
             else {    
                   

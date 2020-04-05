@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 export class infoTecher extends Component {
     render() {
         return (
@@ -11,7 +10,6 @@ export class infoTecher extends Component {
                    
                 </div>
                 <div className="col-8 ">
-                    
                     <ul>
                         <li>
                             Name: Nguyen Duc Man

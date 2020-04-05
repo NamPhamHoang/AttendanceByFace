@@ -3,7 +3,7 @@ import './belowHeader.scss';
 class headerBelow extends Component {
     render() {
         return (
-            <div>
+            <div className="mb-5">
                 <div className="row">
                     <div className='col-6'>
                         <div className="row">
@@ -21,7 +21,7 @@ class headerBelow extends Component {
                         </div>
                     </div>
                     <div className='col-6'>
-                        <h1 className="pl-0">
+                        <h1 className="pl-0 title-face">
                             FACE REGONITION
                         </h1>
                     </div>
