@@ -15,7 +15,6 @@ class Login extends React.Component {
             loginError: ""
         }
     };
-
     handleChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value
@@ -26,14 +25,12 @@ class Login extends React.Component {
         event.preventDefault();
         var users = this.props.users;
         users.forEach(user => {
-            if(user.user_name === this.state.user_name && user.pass_word === this.state.pass_word){
-                location = "/pt"
+            if(user.Username === this.state.user_name && user.Password === this.state.pass_word){
+                location = "/"
             }
-            else {    
-                  
-                }
-            })  
-        }
+        })    
+    }
+
     render() {
         return ( 
         <div className="container login_section">
@@ -61,8 +58,7 @@ class Login extends React.Component {
                                 <input 
                                     type="text" 
                                     className="form-control" 
-                                    placeholder={i18n.t("landing:mainpage.partners.user_name")} 
-                                    
+                                    placeholder={i18n.t("landing:mainpage.partners.user_name")}  
                                     name="user_name"
                                     value = {this.state.email}
                                     onChange = {this.handleChange}/>    
@@ -74,8 +70,7 @@ class Login extends React.Component {
                                 <input 
                                     type="password" 
                                     className="form-control" 
-                                    placeholder={i18n.t("landing:mainpage.partners.pass_word")} 
-                                    
+                                    placeholder={i18n.t("landing:mainpage.partners.pass_word")}                                  
                                     name="pass_word"
                                     value = {this.state.pass_word}
                                     onChange = {this.handleChange}/>

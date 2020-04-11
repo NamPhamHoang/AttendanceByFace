@@ -1,5 +1,12 @@
+
 const data = {
     columns: [
+      {
+        label: 'Student ID',
+        field: 'id',
+        sort: 'asc',
+        width: 50
+      },
       {
         label: 'Name',
         field: 'name',
@@ -10,154 +17,59 @@ const data = {
         label: 'Gender',
         field: 'gender',
         sort: 'asc',
-        width: 50
+        width: 50,
       },
       {
-        label: 'Join time',
-        field: 'jointime',
+        label: 'Attendance Score',
+        field: 'score',
         sort: 'asc',
-        width: 100
+        width: 50,
       },
       {
-        label: 'Leave time',
-        field: 'leavetime',
+        label: 'Percent',
+        field: 'percent',
         sort: 'asc',
-        width: 100
+        width: 50,
       },
       {
-        label: 'Duaration',
-        field: 'duaration',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'Sessions',
-        field: 'sessions',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'Attenliveness Score',
-        field: 'alScore',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'precent',
-        field: 'precent',
-        sort: 'asc',
-        width: 100
-      },
-      {
-        label: 'warning',
+        label: 'Warning',
         field: 'warning',
         sort: 'asc',
-        width: 100
-      }
+        width: 50,
+      },
     ],
     rows: [
       {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
+        name: 'Phạm Hoàng Nam',
+        gender: 'Male',
         precent:'',
         warning: ''
       },
       {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
+        name: 'Lê Tiến Đạt',
+        gender: 'Male',  
         precent:'',
         warning: ''
       },
       {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
+        name: 'Võ Quốc Trung',
+        gender: 'Male',  
         precent:'',
         warning: ''
 
       },
       {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
+        name: 'Nguyễn Tấn Dũng',
+        gender: 'Male', 
         precent:'',
         warning: ''
       },
       {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
+        name: 'Ngô Thị Mộng Mơ',
+        gender: 'Female',
         precent:'',
         warning: ''
       },
-      {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
-        precent:'',
-        warning: ''
-      },
-      {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
-        precent:'',
-        warning: ''
-      },
-      {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration: '',
-        precent:'',
-        warning: ''
-      },
-      {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration:'' ,
-        precent:'',
-        warning: ''
-      }
-      ,
-      {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration: '',
-        precent:'',
-        warning: ''
-      },
-      {
-        name: 'Tiger Nixon',
-        gender: 'nam',
-        jointime: '2009/01/12',
-        leavetime:'',
-        duaration: '',
-        precent:'',
-        warning: ''
-      }
-    
     ]
   };
 

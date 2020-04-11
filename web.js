@@ -1,8 +1,5 @@
 require('custom-env').env(true)
-
-// Inicializa o  log
 require('./endpoints/utils/LogHandler')
-
 const next = require('next');
 const express = require('express');
 const session = require('express-session');
@@ -15,12 +12,17 @@ const helmet = require('helmet');
 const i18n = require('i18next');
 const FileStore = require('session-file-store')(session);
 dotenv.config();
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
+const adapter = new FileSync('db.json')
+const db = low(adapter)
+
 
 // Inicializa o renderizador de aplicação Next
 const dev = !process.env.NODE_ENV;
 const app = next({ dev });
 const handle = app.getRequestHandler();
-
+console.log(db.get('teacher').value())
 app.prepare().then(() => {
 
   // Inicializa o servidor http 
@@ -107,7 +109,18 @@ app.prepare().then(() => {
     return await render(req,res, 'en',  '/landing/partner')
   })
   server.get('/', async (req, res) => {
-    return await render(req, res, 'en', '/landing/home')
+    return await render(req, res, 'en', '/landing/home')  
+  })
+  server.get('/teacherData', (req,res) => {
+    var data = []
+    data = db.get("teacher").value()
+    console.log(data)
+    res.send(data)
+  })
+  server.get('/studentData', (req,res) => {
+    var data = []
+    data = db.get("student").value()
+    res.send(data)
   })
  
   

@@ -1,6 +1,24 @@
 import React, { Component } from 'react'
-
+import axios from 'axios'
 export class infoTecher extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            dataTeacher: [],
+        }
+    }
+    componentDidMount() {
+       this.getData()
+    }
+
+    getData = () => {
+        axios.get('http://localhost:4000/teacherData').then(res =>{
+            const data = res.data
+            this.setState({
+                dataTeacher: data
+            }) 
+        });
+    }
     render() {
         return (
             <div className="row">
@@ -11,13 +29,9 @@ export class infoTecher extends Component {
                    
                 </div>
                 <div className="col-8 ">
-                    
                     <ul>
                         <li>
-                            Name: Nguyen Duc Man
-                        </li>
-                        <li>
-                            Age: 42
+                          {this.state.dataTeacher.map(teacher => <li>{teacher.Teacher_Name}</li>)}
                         </li>
                         <li>
                             Gmail: nguyenducman@gmail.com
