@@ -102,30 +102,26 @@ app.prepare().then(() => {
   server.get('/pt/:slug', async (req, res) => {
     return await render(req, res, 'pt', '/landing/' + req.params.slug)
   })
-  server.get('/user', async(req, res) => {
-    return await render(req,res, 'en',  '/landing/user')
+
+  //cameramen page
+  server.get('/attendance', async(req, res) => {
+    return await render(req,res, 'en',  '/landing/attendance')
   })
+
+  //login page
   server.get('/partner', async(req, res) => {
     return await render(req,res, 'en',  '/landing/partner')
   })
+
+  //home page
   server.get('/', async (req, res) => {
     return await render(req, res, 'en', '/landing/home')  
+  }) 
+
+  //manage page
+  server.get('/manage', async (req,res) => {
+    return await render(req, res, 'en', '/landing/manage')
   })
-  server.get('/teacherData', (req,res) => {
-    var data = []
-    data = db.get("teacher").value()
-    console.log(data)
-    res.send(data)
-  })
-  server.get('/studentData', (req,res) => {
-    var data = []
-    data = db.get("student").value()
-    res.send(data)
-  })
- 
-  
-  // Endpoint de mapeamento genérico para todas as demais requisições de páginas
-  // (Mapeamento para handle do Next)
   server.get('*', async (req, res) => {
     return handle(req, res)
   })
