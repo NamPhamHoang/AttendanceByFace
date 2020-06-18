@@ -22,7 +22,6 @@ const db = low(adapter)
 const dev = !process.env.NODE_ENV;
 const app = next({ dev });
 const handle = app.getRequestHandler();
-console.log(db.get('teacher').value())
 app.prepare().then(() => {
 
   // Inicializa o servidor http 
@@ -122,10 +121,17 @@ app.prepare().then(() => {
   server.get('/manage', async (req,res) => {
     return await render(req, res, 'en', '/landing/manage')
   })
+  server.get('/faceapi', async (req,res) => {
+    res.sendFile(__dirname + "/public/js/face-api.min.js")
+  })
+  server.get('/recog', (req,res) => {
+    res.sendFile(__dirname + "/public/js/face_algoth.js")
+  })
   server.get('*', async (req, res) => {
     return handle(req, res)
   })
 
+  
   // Obtém as portas para iniciar o servidor web
   const http_port = parseInt(process.env.HTTP_PORT, 10) || 80;
   const https_port = parseInt(process.env.HTTPS_PORT, 10) || 443;

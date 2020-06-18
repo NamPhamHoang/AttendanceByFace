@@ -47,6 +47,7 @@
     "react-html5-camera-photo": "^1.5.4",
     "react-i18next": "11.3.3",
     "react-loading": "2.0.3",
+    "react-script-tag": "^1.1.2",
     "react-show-more-text": "1.4.0",
     "react-slick": "0.25.2",
     "react-waypoint": "9.0.2",

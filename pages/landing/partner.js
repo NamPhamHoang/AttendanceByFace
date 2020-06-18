@@ -26,6 +26,7 @@ class partner extends React.Component {
     return (
       <>
         <Header />
+        Đây là trang login
         <Login users = {this.state.users}/>
         <Footer />
       </>
