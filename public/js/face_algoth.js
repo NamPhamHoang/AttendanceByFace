@@ -97,7 +97,7 @@ document.getElementById('btn_snap').addEventListener("click", ()=>{
     const canvas = faceapi.createCanvasFromMedia(img)
     canvas.setAttribute('id', 'detect')
     container.append(canvas)
-    var detect_image = document.getElementById("detect")  
+    var detect_image = document.getElementById("detect")
     detect_image.style.left = "82px"
     detect_image.style.top = "40px"
    
