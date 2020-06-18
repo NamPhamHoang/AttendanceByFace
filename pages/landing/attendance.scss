@@ -1,5 +1,6 @@
 .container_camera {
     display: flex; 
+    z-index: 0;
     .side_bar {
         display: flex;
         flex-wrap: wrap;
@@ -16,8 +17,14 @@
             margin: 0 auto;
             margin-top: 100px;
             
-        }
+        }  
     }
+}
+#context{
+    position: relative;
+    right: 0;
+    padding-left: 82px;
+    padding-top: 50px;
 }
 
 canvas {
@@ -25,3 +32,18 @@ canvas {
     top: 0px;
     right: 100px;
 }
+
+.container_confirm {
+    position: absolute;
+    background-color: blanchedalmond;
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+    left: 600px;
+    top: 100px;
+    .btn_confirm {
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+

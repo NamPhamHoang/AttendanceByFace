@@ -1,9 +1,9 @@
 const video = document.getElementById('video')
+const context = document.getElementById("context")
 let predictedAges = []
 let gender = []
-var context = document.getElementById("context")
-var img = document.querySelector("img")
 let attendance = []
+
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -74,24 +74,35 @@ function interpolateAgePrediction(age) {
   return avgPre
 }
 
-document.getElementById('snap').addEventListener("click", ()=>{
-  const container = document.createElement('div')
-  container.style.position = 'absolute'
-  container.style.right = "0"
-  document.body.append(container)
+document.getElementById('btn_snap').addEventListener("click", ()=>{
+  const img = document.getElementById("face_img")
+  const container = document.getElementById("confirm")
   var getContext = context.getContext('2d')
   getContext.drawImage(video,0,0,560,560);
   imgDataURL = context.toDataURL("image/png");
   img.setAttribute('src', imgDataURL )
-  let image = document.querySelector("img")
-  image.addEventListener('click', async () => {
+  img.addEventListener('click', async () => {
+    var confirm_box = document.getElementById('confirm')
+    confirm_box.style.display = "flex"
+  })
+
+  document.getElementById('btn_another').addEventListener("click", () => {
+    var confirm_box = document.getElementById('confirm')
+      confirm_box.style.display = "none"
+  })
+
+  document.getElementById('btn_use').addEventListener("click", async () => {
     const LabeledFaceDescriptors = await loadLabeledImages()
     const faceMatcher = new faceapi.FaceMatcher(LabeledFaceDescriptors, 0.6)
-    const canvas = faceapi.createCanvasFromMedia(image)
-    canvas.style.position = 'absolute'
+    const canvas = faceapi.createCanvasFromMedia(img)
+    canvas.setAttribute('id', 'detect')
     container.append(canvas)
-    const displaySize = {width:image.width, height:image.height}
-    const detections = await faceapi.detectAllFaces(image)
+    var detect_image = document.getElementById("detect")
+    detect_image.style.left = "82px"
+    detect_image.style.top = "40px"
+   
+    const displaySize = {width:video.width, height:video.height}
+    const detections = await faceapi.detectAllFaces(img)
     .withFaceLandmarks()
     .withFaceDescriptors()
     const resizedDetections = faceapi.resizeResults(detections,displaySize)

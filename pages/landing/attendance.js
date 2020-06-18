@@ -18,9 +18,15 @@ import './attendance.scss'
                      <img id="face_img" src = "/images/Bitmap.png" width="100" height="100"></img>
                      <button id="btn_snap" className=" btn btn-primary"> click me</button>
                   </div>
+                  <div className="container_confirm" id="confirm">
+                     <canvas id = "context" width = "650" height = "650"></canvas>
+                     <div className = "btn_confirm">
+                        <button className="btn btn-success" id="btn_use">USE</button>
+                        <button className="btn btn-Secondary" id="btn_another">ANOTHER</button>
+                     </div>
+                  </div>
                   <video id="video" className="col-sm-10" width="970" height="970" autoPlay></video>
-               </div>
-              
+               </div>    
                <ScriptTag isHydrating={true} type="text/javascript" src="faceapi" />
                <ScriptTag isHydrating={true} type="text/javascript" src="recog" />
             </>
