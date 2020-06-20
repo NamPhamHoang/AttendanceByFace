@@ -11,11 +11,8 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const i18n = require('i18next');
 const FileStore = require('session-file-store')(session);
+const Data = require('./connect')
 dotenv.config();
-const low = require('lowdb')
-const FileSync = require('lowdb/adapters/FileSync')
-const adapter = new FileSync('db.json')
-const db = low(adapter)
 
 
 // Inicializa o renderizador de aplicação Next
@@ -25,6 +22,7 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
 
   // Inicializa o servidor http 
+
   const server = express();
   server.use(bodyParser.json({
     limit: '2mb',
@@ -51,7 +49,6 @@ app.prepare().then(() => {
     res._durationStart = Date.now();
     next();
   });
-
   // Parametros de configuração para iniciar a sessão
   const sessionConfig = {
     secret: process.env.SESSION_SECRET,
@@ -65,7 +62,6 @@ app.prepare().then(() => {
       ttl: (3 * 60 * 60) // Session time to live in seconds. Defaults to 3600
     })
   }
-
   // Inicializa a sessão
   server.use(session(sessionConfig));
 
@@ -121,16 +117,18 @@ app.prepare().then(() => {
   server.get('/manage', async (req,res) => {
     return await render(req, res, 'en', '/landing/manage')
   })
+  
   server.get('/faceapi', async (req,res) => {
-    res.sendFile(__dirname + "/public/js/face-api.min.js")
+    await res.sendFile(__dirname + "/public/js/face-api.min.js")
   })
-  server.get('/recog', (req,res) => {
-    res.sendFile(__dirname + "/public/js/face_algoth.js")
+  server.get('/recog', async (req,res) => {
+    await res.sendFile(__dirname + "/public/js/face_algoth.js")
   })
+  server.use('/data', Data)
   server.get('*', async (req, res) => {
     return handle(req, res)
   })
-
+  
   
   // Obtém as portas para iniciar o servidor web
   const http_port = parseInt(process.env.HTTP_PORT, 10) || 80;
@@ -175,3 +173,7 @@ app.prepare().then(() => {
     logError('web.js', 'NEXT Error', ex);
     process.exit(1)
   })
+
+
+
+
