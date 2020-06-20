@@ -11,8 +11,12 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const i18n = require('i18next');
 const FileStore = require('session-file-store')(session);
-const Data = require('./connect')
+const Data = require('./controller/connect')
+const LoginController = require('./controller/LoginController');
+var cookieParser = require('cookie-parser')
+
 dotenv.config();
+
 
 
 // Inicializa o renderizador de aplicação Next
@@ -20,8 +24,6 @@ const dev = !process.env.NODE_ENV;
 const app = next({ dev });
 const handle = app.getRequestHandler();
 app.prepare().then(() => {
-
-  // Inicializa o servidor http 
 
   const server = express();
   server.use(bodyParser.json({
@@ -64,7 +66,7 @@ app.prepare().then(() => {
   }
   // Inicializa a sessão
   server.use(session(sessionConfig));
-
+  server.use(cookieParser())
   // Define a pasta de conteúdo público
   server.use('/', express.static('public')); // do cai ham nay ne roi t out day
 
@@ -99,32 +101,37 @@ app.prepare().then(() => {
   })
 
   //cameramen page
-  server.get('/attendance', async(req, res) => {
+  server.get('/attendance', LoginController.authLogin ,async(req, res) => {
     return await render(req,res, 'en',  '/landing/attendance')
   })
 
-  //login page
+  //login page get method
   server.get('/partner', async(req, res) => {
     return await render(req,res, 'en',  '/landing/partner')
   })
+  //login page post method 
+  server.post('/partner', LoginController.PostLogin,  )
 
   //home page
-  server.get('/', async (req, res) => {
+  server.get('/', LoginController.authLogin, async (req, res) => {
     return await render(req, res, 'en', '/landing/home')  
   }) 
 
   //manage page
-  server.get('/manage', async (req,res) => {
+  server.get('/manage', LoginController.authLogin, async (req,res) => {
     return await render(req, res, 'en', '/landing/manage')
   })
   
+  //sendFaceFile
   server.get('/faceapi', async (req,res) => {
     await res.sendFile(__dirname + "/public/js/face-api.min.js")
   })
+  //sendScriptAlgoth
   server.get('/recog', async (req,res) => {
     await res.sendFile(__dirname + "/public/js/face_algoth.js")
   })
-  server.use('/data', Data)
+  //Use router
+  server.use('/data', LoginController.authLogin, Data)
   server.get('*', async (req, res) => {
     return handle(req, res)
   })
