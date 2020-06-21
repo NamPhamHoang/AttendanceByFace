@@ -27,12 +27,25 @@ router.get('/datateacher' , async(req,res) => {
         port: 5432,
     });
     await client.connect()
-    const student = await client.query("select * from teacher")
+    const student = await client.query("select * from teacher where TEACHER_ID = $1", [req.cookies.teacher.teacher_id])
+    res.send(student.rows)
+})
+
+router.get('/dataclass' , async(req,res) => {
+    const client = new Client({
+        user: 'postgres',
+        host: '172.21.0.2',
+        database: 'CDIO_2',
+        password: 'postgres',
+        port: 5432,
+    });
+    await client.connect()
+    const student = await client.query("select * from class where TEACHER_ID = $1", [req.cookies.teacher.teacher_id])
     res.send(student.rows)
 })
 
 router.post('/datastudent', (req,res) => {
-    console.log(req.body)
+    
 })
 
 

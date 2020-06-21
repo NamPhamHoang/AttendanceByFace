@@ -7,7 +7,6 @@ import React, { useState } from 'react'
 
 
 const manage = (props) => {
-    console.log(props.req)
     return (
         <span>
             <Header />
@@ -16,5 +15,4 @@ const manage = (props) => {
     )
 }
  export default manage;
- 
  

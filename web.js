@@ -118,8 +118,8 @@ app.prepare().then(() => {
   }) 
 
   //manage page
-  server.get('/manage/:prams', async (req,res) => {
-    return await render(req, res, 'en', '/landing/manage' + req.params.prams)
+  server.get('/manage', async (req,res) => {
+    return await render(req, res, 'en', '/landing/manage')
   })
   
   //sendFaceFile

@@ -13,7 +13,7 @@ module.exports.PostLogin = async(req,res) => {
     await client.connect()
     await client.query("select * from teacher")
     .then((results) => {
-        let teacher = results.rows.filter(user => user.TEACHER_ID==req.body.Username)[0];
+        let teacher = results.rows.filter(user => user.teacher_id==req.body.Username)[0];
         if(!teacher) {
             res.status(400).send({
                 error: "User not found"
@@ -21,7 +21,7 @@ module.exports.PostLogin = async(req,res) => {
             res.redirect('/partner')
         }
         else {
-            if(teacher.TEACHER_PASSWORD == req.body.Password) {
+            if(teacher.teacher_password == req.body.Password) {
                 res.cookie("teacher", teacher)
                 res.status(200).redirect('/')
             }
@@ -43,6 +43,6 @@ module.exports.authLogin = function (req, res, next) {
      if (req.cookies.teacher==undefined) {
         res.redirect('/partner') 
     }
-    else next() 
+    else next()
 }
 
