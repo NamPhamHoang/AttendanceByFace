@@ -100,22 +100,22 @@
         },
         "mainpage": {
             "mainbox": {
-                "title": "Olá 👋, eu sou a Anny",
-                "description": "Sou um robô de crypto trading que entende a linguagem humana, para ajudá-lo a gerenciar seus sinais de criptomoedas no Telegram, automatizar seus tradings e garantir que você nunca perca um lucro.",
+                "title": "Xin Chào 👋, Chúng tôi là Anny",
+                "description": "Hệ thống nhận dạng khuôn mặt là một ứng dụng máy tính tự động nhận dạng hoặc nhận dạng ai đó từ ảnh kỹ thuật số hoặc khung video từ nguồn video. Một trong những cách để làm điều này là so sánh các tính năng khuôn mặt được chọn trước từ hình ảnh và cơ sở dữ liệu khuôn mặt.",
                 "label_button": "Dùng thử"
             },
             "powered": {
-                "title": "Movido a inteligência artificial",
-                "description": "Simplesmente digite “Oi Anny“ e ela irá ajudá-lo com suas opções.",
+                "title": "Thông tin nhận diện khuôn mặt",
+                "description": "Bạn chỉ cần chọn khi quét nó sẽ giúp bạn quét khuôn mặt của bạn.",
                 "features_left": {
-                    "title": "Gerencie seus sinais",
-                    "description": "Anny ajuda você a gerenciar seus sinais de criptomoedas. Compre, venda, defina ordens de stop loss e obtenha relatórios de posição sob demanda.",
-                    "note": "Aprendizagem contínua da linguagem humana"
+                    "title": "Nhận dạng 3 chiều ",
+                    "description": "Một xu hướng mới nổi, được tuyên bố là cải thiện độ chính xác, là nhận dạng khuôn mặt ba chiều. Kỹ thuật này sử dụng cảm biến 3D để nắm bắt thông tin về hình dạng của khuôn mặt. Thông tin này sau đó được sử dụng để xác định các đặc điểm đặc biệt trên bề mặt của khuôn mặt, chẳng hạn như các đường viền của hốc mắt, mũi và cằm.",
+                    "note": "Học liên tục ngôn ngữ của con người"
                 },
                 "features_right": {
-                    "title": "Seja notificado em tempo real",
-                    "description": "Anny monitora os preços em intervalo de 1 segundo, 24/7 e avisa quando um sinal atinge a faixa de compra e quando os targets e lucros são alcançados.",
-                    "note": "Anny fala vários idiomas"
+                    "title": "Phân tích kết cấu da",
+                    "description": "Sử dụng chi tiết hình ảnh của da, được chụp trong hình ảnh kỹ thuật số hoặc máy quét tiêu chuẩn. Kỹ thuật này được gọi là phân tích kết cấu da, đưa các đường, hình dạng và nốt sần đặc trưng trên da của một người vào không gian toán học.",
+                    "note": "Nói nhiều ngôn ngữ"
                 }
             },
             "menu": {
@@ -130,22 +130,21 @@
                 "blog": "Blog"
             },
             "indispensable": {
-                "title": "Indispensável para profissionais",
-                "label_auto_buy": "Auto Buy",
-                "label_auto_sell": "Auto Sell",
-                "label_auto_stop_loss": "Auto Stop Loss",
-                "label_trailing": "Trailing Take Profit",
-                "label_manage": "Sinais ilimitados",
-                "label_profitability": "Relatórios de lucratividade",
-                "label_description_auto_buy": "Ligue o Auto Buy com o valor de BTC que você desejar. Assim que um novo sinal for postado, Anny fará uma ordem de compra em seu nome.",
-                "label_description_auto_sell": "Defina seu lucro-alvo e relaxe. Anny irá monitorar o preço para você e vender a preço de mercado quando o lucro for alcançado.",
-                "label_description_auto_stop_loss": "Faça trade seguros com Auto Stop Loss, Anny detecta a execução de sua ordem de compra e define uma ordem de stop loss conforme o sinal.",
-                "label_description_trailing": "A Anny é especialista em combinar trailing stop-loss com take profit. Com eles você pode almejar alvos maiores enquanto protege sua margem de lucro.",
-                "label_description_manage": "Anny ajuda gerenciar sinais de quantos provedores de sinal você precisar.",
-                "label_description_profitability": "A Anny consolida sua posição em todos os seus sinais ativos, para fornecer uma visão geral de lucros e prejuízos, segmentado por provedor de sinais e moedas."
+                "title": "Công dụng của Face Recognition",
+                "label_auto_buy": " Tự động mua",
+                "label_auto_sell": "Tự động bán",
+                "label_auto_stop_loss": "Giao dịch",
+                "label_trailing": "Ứng dụng đa dạng",   
+                "label_manage": "Nhận diện tối đa ",
+                "label_profitability": "Khả năng mở rộng linh hoạt",
+                "label_description_auto_buy": "Ngay sau khi sử dụng thử, ứng dụng sẽ tự động hỏi và yêu cầu bạn mua để tiếp tục sử dụng. Nếu bạn đồng ý, bạn sẽ được yêu cầu nhập số thẻ ngân hàng để thanh toán",
+                "label_description_auto_sell": "Đặt lợi nhuận mục tiêu của bạn và thư giãn. Anny sẽ theo dõi giá và chốt lời với một lệnh bán giới hạn hoặc thị trường khi đạt được lợi nhuận mục tiêu của bạn.",
+                "label_description_auto_stop_loss": "Phần mềm có thể được sử dụng cho nhiều loại máy ảnh khác nhau, dễ sử dụng cho người dùng và có thể nhận dạng nhiều người cùng một lúc..",
+                "label_description_trailing": "Phần mềm có thể được sử dụng cho nhiều loại máy ảnh khác nhau, dễ sử dụng cho người dùng và có thể nhận dạng nhiều người cùng một lúc.",
+                "label_description_manage": "Hình ảnh được mã hóa và lưu lại. Nó sẽ tự động bị xóa sau một khoảng thời gian nhất định. Chỉ người dùng cụ thể có ủy quyền mới có thể xem hình ảnh khuôn mặt.",
+                "label_description_profitability": "Hoạt động với cấu hình nhỏ với nhiều camera. Dễ dàng mở rộng số lượng camera sau khi vận hành."
             },
             "partners": {
-                "title": "ĐIỂM DANH BẰNG KHUÔN MẶT",
                 "Login_title": "ĐĂNG NHẬP",
                 "user_name": "Tên đăng nhâp",
                 "pass_word": "Mật khẩu",
@@ -156,13 +155,13 @@
                 "label_Forgot your password?" : "Quên mật khẩu"
             },
             "not_conviced": {
-                "title": "Tecnologia de ponta a seu serviço 24/7",
-                "label_secure": "Segurança e Privacidade",
-                "label_cloud": "Baseado na Nuvem",
-                "label_community": "Comunidade & Suporte",
-                "label_description_secure": "Nós criptografamos seus dados usando algoritmo de chaves assimétricas, o mesmo princípio de segurança da tecnologia Blockchain. Nós transferimos dados usando criptografia segura SSL/TLS.",
-                "label_description_cloud": "Anny vive nos servidores de alta performance e segurança da Amazon AWS, na Alemanha. Está em operação 24/7 na velocidade da luz.",
-                "label_description_community": "Participe da nossa comunidade, receba novidades, dicas e suporte."
+                "title": "ĐÁNG TIN CẬY VÀ SỰ TIN TƯỞNG",
+                "label_secure": "An toàn và riêng tư",
+                "label_cloud": "Dựa trên đám mây",
+                "label_community": "Sự đóng góp cho cộng đồng",
+                "label_description_secure": "Chúng tôi mã hóa dữ liệu của bạn bằng thuật toán khóa bất đối xứng, cùng nguyên tắc bảo mật của công nghệ Blockchain. Chúng tôi chuyển dữ liệu bằng mã hóa SSL / TLS an toàn.",
+                "label_description_cloud": "Máy quét sống trên các máy chủ Amazon AWS hiệu suất cao và an toàn ở Đức và hoạt động 24/7 với tốc độ ánh sáng.",
+                "label_description_community": "Cần giúp đỡ? Nhóm hỗ trợ của chúng tôi sẵn sàng tiếp nhận những nghi ngờ và vấn đề của bạn. Tham gia cộng đồng của chúng tôi, nhận tin tức, lời khuyên và hỗ trợ."
             },
             "pricing": {
                 "title": "Sem comissões, experimente gratis por 7 dias",

@@ -100,8 +100,8 @@
         },
         "mainpage": {
             "mainbox": {
-                "title": "Hi 👋, I'm Anny",
-                "description": "I'm a crypto trading bot that understands human language to help you manage your crypto signals on Telegram, automate your tradings and make sure you never miss a profit.",
+                "title": "Hi 👋, I'm Face Recognition",
+                "description": "The facial recognition system is a computer application that automatically identifies or identifies someone from a digital photo or a video frame from a video source. One of the ways to do this is to compare pre-selected face features from the image and a face database.",
                 "label_button": "Try for free"
             },
             "menu": {
@@ -116,36 +116,36 @@
                 "blog": "Blog"
             },
             "powered": {
-                "title": "Powered by artificial inteligence",
-                "description": "Simply type “Hi Anny” and she will help you with your options.",
+                "title": "INFORMATION ABOUT FACE RECOGNITION",
+                "description": "You just need to select on scan it will help you scan your face",
                 "features_left": {
-                    "title": "Manage your Signals",
-                    "description": "Anny helps you manage your crypto signals. Buy, sell, set stop loss orders and get position reports on-demand.",
+                    "title": "3-dimensional identification",
+                    "description": "A new emerging trend, claimed to improve accuracy, is three-dimensional face recognition. This technique uses 3D sensors to capture information about the shape of a face. This information is then used to identify special features on the surface of a face, such as the contours of the eye sockets, nose and chin.",
                     "note": "Continuos learning of human language"
                 },
                 "features_right": {
-                    "title": "Get notified in real time",
-                    "description": "Anny monitors prices at an interval of 1 second, 24/7 and notifies you when a signal as reached buy ranges and when targets and profits are reached.",
+                    "title": "Skin texture analysis",
+                    "description": "An emerging trend of using image details of the skin, captured in standard digital images or scanners. This technique is called skin texture analysis, bringing characteristic lines, shapes, and nodules on a person's skin into a mathematical space.",
                     "note": "Anny Speaks multiple languages"
                 }
             },
             "indispensable": {
-                "title": "Perfect for Beginners, Indispensable for PROs",
+                "title": "Uses of Face Recognition",
                 "label_auto_buy": "Auto Buy",
                 "label_auto_sell": "Auto Sell",
                 "label_auto_stop_loss": "Auto Stop Loss",
-                "label_trailing": "Trailing Take Profit",
-                "label_manage": "Manage Unlimited Signals",
-                "label_profitability": "Profitability Reports",
-                "label_description_auto_buy": "As soon as a new signal is posted, Anny will monitor the price and place a buy order on your behalf as soon as the buy conditions are met.",
+                "label_trailing": "Support many different types of cameras",
+                "label_manage": "Great security",
+                "label_profitability": "Flexible scalability",
+                "label_description_auto_buy": "Immediately after trial use, the application will automatically ask and ask you to buy to continue using. If you agree, you will be asked to enter your bank card number for payment ",
                 "label_description_auto_sell": "Set your target profit and relax. Anny will monitor the price and take profit with a limit or market sell order when your target profit is reached.",
-                "label_description_auto_stop_loss": "Trade safe with auto stop loss, Anny detects the execution of your buy order and adds the signal stop loss order automatically.",
-                "label_description_trailing": "Anny is an expert on combining trailing stop-loss with take profit orders. Aim for the highest targets while securing your profit by selling a portion of your balance.",
-                "label_description_manage": "Anny helps you manage as many signals from as many signal providers you need.",
-                "label_description_profitability": "Anny consolidates your position on all your active signals to provide you with profit/loss overview, broken down by signal provider and coin trade."
+                "label_description_auto_stop_loss": "Secure transactions at the request of customers, when the transaction is completed, there will be an invoice on the message on your device",
+                "label_description_trailing": "The software can be used for many different types of cameras, easy to use for users, and can identify many people at the same time.",
+                "label_description_manage": "Images are encrypted and saved. It will be automatically deleted after a certain period of time. Only specific users with authorization can view the face image.",
+                "label_description_profitability": "Operate with small configuration with multiple cameras. Easily expand the number of cameras after commissioning."
             },
             "partners": {
-                "title": "ATTENDANCE BY FACE RECOGNITION",
+                "title": "",
                 "Login_title": "LOGIN",
                 "user_name": "username",
                 "pass_word": "password",
@@ -161,7 +161,7 @@
                 "label_cloud": "Cloud Based",
                 "label_community": "Community & Support",
                 "label_description_secure": "We encrypt your data using an asymmetric key algorithm, the same security principle of the Blockchain technology. We transfer data using secure SSL/TLS encryption.",
-                "label_description_cloud": "Anny lives on high performant and secure Amazon AWS servers in Germany and operates 24/7 at lighting speed.",
+                "label_description_cloud": "Scanner lives on high performant and secure Amazon AWS servers in Germany and operates 24/7 at lighting speed.",
                 "label_description_community": "Need help? Our support team is ready to intake your doubts and issues. Join our community, receive news, tips and support."
             },
             "pricing": {

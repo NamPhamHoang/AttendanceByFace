@@ -10,7 +10,7 @@ class Main extends React.Component {
             <div className="main_section">
                 <Header />
                 <div className="assistant_image">
-                    <img src="/images/main_anny.png" />
+                    <img src="/images/app1.jpg" />
                 </div>
                 <div className="box">
                     <h1 className="title">{i18n.t("landing:mainpage.mainbox.title")}</h1>

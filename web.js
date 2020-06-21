@@ -113,7 +113,7 @@ app.prepare().then(() => {
   server.post('/partner', LoginController.PostLogin,  )
 
   //home page
-  server.get('/', LoginController.authLogin, async (req, res) => {
+  server.get('/', async (req, res) => {
     return await render(req, res, 'en', '/landing/home')  
   }) 
 
@@ -122,7 +122,7 @@ app.prepare().then(() => {
     return await render(req, res, 'en', '/landing/manage' + req.params.prams)
   })
   
-  //sendFaceFile
+  //sendFaceFile=
   server.get('/faceapi', async (req,res) => {
     await res.sendFile(__dirname + "/public/js/face-api.min.js")
   })
