@@ -45,7 +45,7 @@ router.get('/dataclass' , async(req,res) => {
 })
 
 router.post('/datastudent', (req,res) => {
-    
+    console.log(req.body)
 })
 
 
