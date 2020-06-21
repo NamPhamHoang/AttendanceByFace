@@ -11,7 +11,6 @@ const manage = (props) => {
     return (
         <span>
             <Header />
-            Đây là trang quản lí thông tin học sinh đi học
             <Main />
         </span >
     )

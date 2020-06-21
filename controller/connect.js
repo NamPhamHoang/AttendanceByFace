@@ -8,7 +8,7 @@ const router = express.Router()
 router.get('/datastudent' , async(req,res) => {
     const client = new Client({
         user: 'postgres',
-        host: '172.21.0.3',
+        host: '172.21.0.2',
         database: 'CDIO_2',
         password: 'postgres',
         port: 5432,
@@ -21,7 +21,7 @@ router.get('/datastudent' , async(req,res) => {
 router.get('/datateacher' , async(req,res) => {
     const client = new Client({
         user: 'postgres',
-        host: '172.21.0.3',
+        host: '172.21.0.2',
         database: 'CDIO_2',
         password: 'postgres',
         port: 5432,
