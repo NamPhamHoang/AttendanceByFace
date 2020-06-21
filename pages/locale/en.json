@@ -165,13 +165,18 @@
                 "label_description_community": "Need help? Our support team is ready to intake your doubts and issues. Join our community, receive news, tips and support."
             },
             "pricing": {
-                "title": "Member",
+                "title": "Members who create cdio project",
                 "plan_starter": {
-                    "title": "Starter",
-                    "description": "The basic kit for scalping and short exits",
+                    "title_nam": "Pham Hoang Nam",
+                    "title_dat": "Le Tien Dat",
+                    "title_dung": "Nguyen Tan Dung",
+                    "title_trung": "Vo Quoc Trung",
+                    "title_mo": "Ngo Mong Mo",
+                    "role_master": "SCRUM MASTER",
+                    "role_owner": "PRODUCT OWNER",
+                    "role_dev": "DEVER",
+                    "role_tester": "TESTER",
                     "subDescription": "Gets the job done in bear markets.",
-                    "original_price": "30 USD/Month",
-                    "price": "20 USD/Month",
                     "list_item1": "New! 👉Automatic or 1-click buy",
                     "list_item2": "Connect Anny with your signal provider and free signals",
                     "list_item3": "Auto sell, take profit with limit or market orders",
