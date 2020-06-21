@@ -1,103 +1,5 @@
 {
-    "common": {
-        "label_submit": "Enviar",
-        "label_previous": "← Anterior",
-        "label_next": "Próximo →",
-        "label_plan": "Plano",
-        "label_validate": "Validade",
-        "label_start": "Começar",
-        "label_show_more": "Ver mais",
-        "label_show_less": "Ver menos",
-        "message_validate_input": "Por favor, forneça um valor válido.",
-        "message_validate_select": "Por favor, selecione uma opção.",
-        "error_generic": "Opa! Algo deu errado!"
-    },
-    "meta_tag": {
-        "description": "Olá! Sou Anny, um robô de crypto trading que entende a linguagem humana, para ajudá-lo a gerenciar seus sinais de criptomoedas no Telegram, automatizar seus tradings e garantir que você nunca perca um lucro.",
-        "keywords": "bot, robô, trading, trader, telegram, crypto, criptomoeda, sinais, altcoin, bitcoin, usdt"
-    },
-    "registration": {
-        "welcome_title": "Bem-vindo {{name}}!",
-        "welcome_description": "Você está aqui porque deseja participar do trial do robô da Anny. Siga as instruções do <0>passo a passo</0> para concluir o seu cadastro com sucesso.",
-        "email_verify_title": "Obrigado!",
-        "email_verify_description": "Enviei um email com um código de verificação. O e-mail pode levar alguns minutos para chegar.",
-        "binance_title": "Estamos quase lá",
-        "binance_description": "Por favor crie chaves da Binance somente para o meu uso. Copie e cole no formulário abaixo.",
-        "binance_discount": "Ganhe 20% de desconto adicional nas tarifas da Binance criando uma conta com <0>este link</0>.",
-        "title_hi": "Olá {{name}}!",
-        "binance_update_description": "Ok, vamos atualizar as suas chaves da Binance. Por favor crie chaves somente para meu uso. Copie e cole no formulário abaixo.",
-        "success_title": "Prontinho!",
-        "label_email": "Digite seu e-mail",
-        "label_country": "Selecione seu país",
-        "label_language": "Selecione seu idioma",
-        "label_language_english": "Inglês",
-        "label_language_portuguese": "Português",
-        "label_verification_code": "Digite o código de verificação",
-        "label_api_key": "Binance API Key",
-        "label_secret_key": "Binance Secret Key",
-        "label_skip_binance": "Criar mais tarde",
-        "message_terms_use": "Ao clicar em “Enviar” você concorda com os <0>termos de uso</0> e <1>política de privacidade</1> do trial",
-        "message_secure_service": "🔒 Este é um ambiente privado e seguro para completar o seu cadastro.",
-        "message_validate_email": "Por favor, forneça um e-mail válido.",
-        "message_validate_country": "Por favor, selecione um país.",
-        "message_validate_verification_code": "Por favor, forneça um código de verificação válido.",
-        "message_validate_api_key": "Por favor, forneça uma API Key válida.",
-        "message_validate_secret_key": "Por favor, forneça uma Secret Key válida.",
-        "message_info_key": "Fique tranquilo, vamos armazenar as suas chaves com outra camada de criptografia e nunca vamos divulgá-las para ninguém.",
-        "message_error_email_already_exists": "O endereço de e-mail informado já está em uso.",
-        "message_error_verification_code": "O código de verificação informado não é válido.",
-        "message_success_registration": "Obrigado {{name}}!<br/>Seu cadastro está completo. Volte para o {{messenger}} e comece a cadastrar os seus sinais ativos.",
-        "message_success_binance_update": "Obrigado {{name}}! As suas novas chaves da Binance foram registradas com sucesso. Volte para o {{messenger}} e continue a cadastrar os seus sinais.",
-        "success_paypal_description": "Obrigado, seu pagamento foi realizado com sucesso! ATENÇÃO: Pode levar alguns minutos até o PayPal confirmar o pagamento. Assim que efetivado você receberá uma mensagem no Telegram.",
-        "group": {
-            "init_description_create": "Olá {{name}}, você está aqui porque deseja criar um novo grupo de sinais. Por favor preencha o formulário de configuração.",
-            "init_description_update": "Olá {{name}}, você está aqui porque deseja alterar o seu grupo de sinais.",
-            "title_step1": "Passo 1 de 3: Descrição do grupo",
-            "title_step2": "Passo 2 de 3: Configurações do grupo",
-            "title_step3": "Passo 3 de 3: Informações de contato",
-            "label_name": "Nome do grupo",
-            "label_description": "Descrição dos serviços, perfil e tipo de sinais",
-            "label_photo": "Foto do perfil",
-            "label_investment": "Limite de investimento por usuário (banca em BTC)",
-            "label_minimum": "Mínimo",
-            "label_maximum": "Máximo",
-            "label_privacy": "Privacidade",
-            "label_option_public": "Público",
-            "label_option_private": "Privado",
-            "label_type": "Tipo de grupo",
-            "label_option_free": "Sinais free",
-            "label_option_paid": "Sinais pagos",
-            "label_option_sell_subscriptions": "Permitir que a Anny faça a cobrança da mensalidade",
-            "label_monthly": "Valor da mensalidade",
-            "label_url": "URL do site (opcional)",
-            "label_telegram_group": "Grupo no Telegram (opcional)",
-            "label_telegram_channel": "Canal no Telegram (opcional)",
-            "label_telegram_support": "Usuário de suporte no Telegram (opcional)",
-            "message_info_privacy": "A privacidade diz respeito à apresentação do seu grupo no diretório da Anny. Grupos públicos serão listados no diretório público Anny, no Telegram e na Web.",
-            "message_info_sell_subscriptions": "A Anny pode realizar a cobrança dos usuários inscritos no seu grupo pago. Será criado um plano de cobrança recorrente mensal através do meio de pagamento PayPal.",
-            "message_error_photo_type": "A imagem deve estar no formato GIF, JPG ou PNG",
-            "message_error_photo_size": "O tamanho do arquivo não pode ultrapassar 200 KB",
-            "message_success_create": "O seu grupo foi criado com sucesso. Agora é só voltar para o Telegram e convidar os primeiros membros.",
-            "message_success_update": "O seu grupo foi alterado com sucesso. Volte para o Telegram e continue a cadastrar os seus sinais."
-        },
-        "invite": {
-            "title": "Convite de {{name}}",
-            "description": "Olá, você está aqui porque recebeu um convite para entrar em um grupo de sinais na Anny De Crypto. Conecte-se utilizando a sua conta do Telegram:",
-            "success_description": "Por aqui está tudo certo, agora volte para o Telegram e veja o resultado do seu convite."
-        }
-    },
     "landing": {
-        "menu": {
-            "about": "Sobre",
-            "signals": "Sinais",
-            "pricing": "Preços",
-            "team": "Equipe",
-            "helpcenter": "Central de ajuda",
-            "api": "API",
-            "contactus": "Contato",
-            "virtualassistants": "Assistentes virtuais",
-            "blog": "Blog"
-        },
         "mainpage": {
             "mainbox": {
                 "title": "Xin Chào 👋 các bạn",
@@ -162,156 +64,29 @@
                 "label_description_secure": "Chúng tôi mã hóa dữ liệu của bạn bằng thuật toán khóa bất đối xứng, cùng nguyên tắc bảo mật của công nghệ Blockchain. Chúng tôi chuyển dữ liệu bằng mã hóa SSL / TLS an toàn.",
                 "label_description_cloud": "Máy quét sống trên các máy chủ Amazon AWS hiệu suất cao và an toàn ở Đức và hoạt động 24/7 với tốc độ ánh sáng.",
                 "label_description_community": "Cần giúp đỡ? Nhóm hỗ trợ của chúng tôi sẵn sàng tiếp nhận những nghi ngờ và vấn đề của bạn. Tham gia cộng đồng của chúng tôi, nhận tin tức, lời khuyên và hỗ trợ."
-            },
-            "pricing": {
-                "title": "Sem comissões, experimente gratis por 7 dias",
-                "plan_starter": {
-                    "title": "Starter",
-                    "description": "Kit básico para scalps e saídas curtas",
-                    "subDescription": "Perfeito em mercados indefinidos ou em baixa.",
-                    "original_price": "R$60/Mês",
-                    "price": "R$44/Mês",
-                    "list_item1": "Novo! 👉Compra automática ou 1-click buy",
-                    "list_item2": "Conecte a Anny com seu provedor de sinais e sinais free",
-                    "list_item3": "Auto Sell com ordens market e limit",
-                    "list_item4": "Stop loss automático",
-                    "list_item5": "Trading manual",
-                    "list_item6": "Configure seus próprios sinais de scalp",
-                    "list_item7": "Relatório de posição dos sinais",
-                    "list_item8": "Visão geral de saldos",
-                    "list_item9": "Monitoramento de sinal por 10 dias"
-                },
-                "plan_pro": {
-                    "title": "PRO",
-                    "description": "Almeje ganhos maiores com trailing take profit",
-                    "subDescription": "Ideal para mercados em alta.",
-                    "original_price": "R$120/Mês",
-                    "price": "R$90/Mês",
-                    "list_item1": "Todos os recursos do plano Starter",
-                    "list_item2": "Configure seus próprios sinais multi-target",
-                    "list_item3": "Importe sinais do qualquer provedor",
-                    "list_item4": "Trailing Take Profit (trailing stop-loss + take profit)",
-                    "list_item5": "Relatório completo",
-                    "list_item6": "Monitoramento de sinal por 15 dias",
-                    "note": "*Compra automática disponível somente para assinantes de nossos sinais parceiros:"
-                }
-            },
-            "testimonials": {
-                "title": "Confira o que os nossos clientes dizem",
-                "quote": {
-                    "oberdan": "A Anny De Crypto pra mim é mais do que um simples robô para trading, pois consegue interagir de forma intuitiva. Durante o teste eu consegui alcançar resultados que antes me pareciam impossíveis devido ao trabalho e família. A integração da Anny com os sinais de provedores fez com que meus tradings sejam 100% automatizados, trazendo conforto e segurança. Agradeço a toda equipe de desenvolvimento por tornar a Anny uma realidade no mercado de criptomoedas.",
-                    "jaqueline": "Anny de Crypto é simplesmente fantástica! Quando comecei a utilizá-la eu era totalmente leiga no assunto bot e isso não foi nenhum impeditivo para eu me apaixonar por ela 🥰 por se tratar de uma bot auto explicativa, com uma inteligência artificial incrível a qual permite facilitar muito nosso dia a dia, pois ela gerencia os sinais, permite configuração conforme estratégia e momento do mercado de criptos, compra e vende as moedas, possui alertas, e com toda essa tecnologia nos sobra mais tempo para estudos, análises, lazer e tudo mais. Enfim, ela é demais, vale a pena experimentar e permitir que ela se torne indispensável para você assim como é para mim. 😉",
-                    "brunogama": "A Anny é uma mega aliada para o trader. Com ela você terá mais tempo para curtir sua família e amigos. É uma tranquilidade que não tem preço! E a possibilidade de integrar sinais externos para automação dos trades é maravilhoso. Tenho tido a experiência com os sinais do Crypto investidor e tem sido perfeito!",
-                    "alvaro": "Uma ferramenta incrível tanto para o trader inexperiente, pois sua intregração automatica de sinais é fantástica, como também para o trader um pouco mais experiente, que pode criar seu próprio sinal fazendo com que ela monitore tudo, desde stop loss até trailing stop e alvos automáticos. Gosto muito de usar e recomendo para todos que conheço, agradeço aos desenvolvedores a oportunidade de fazer parte do projeto Anny, sucesso garantido.",
-                    "wagnerjr": "Depois de testar diversos tipos de Bots para alcançar a sonhada automação dos meus trades, posso testemunhar que a Anny é o bot que sem dúvida vem realizando com maior eficiência esse sonho...  a mais de meses venho utilizando ela para controlar de forma prática e simples tudo aquilo que pesava no Daytrade.... Hoje opero 100% pelo celular em qualquer lugar a qualquer hora e  ter Anny que está ali controlando  tudo e te informando  de tudo o tempo todo... digo tudo mesmo ..ela compra.. arma o stop .. e vende do jeito que mandei sobre todas as minhas posições é muito bom... fantástico pra dizer a verdade. Pra mim o melhor é  o fato estar ali no telegram na palma da mão faz toda diferenças  Praticidade e eficiência total.. melhorei muito meus  resultados com ela no controle sem o emocional  pra atrapalhar! PARABÉNS  à todos os idealizadores do projeto a Anny é  sensacional, é  outra vida com ela no controle ..simplesmente  Obrigado !!!!!  indicação  Total  !!!!!",
-                    "andregontijo": "O que falar de uma robô programada em Inteligência Artificial que trabalha para mim enquanto eu estou dormindo, trabalhando, tomando banho ou mesmo com o meu aparelho de celular desligado? Pois é, isso é possível com ela! A Anny e todas as suas funcionalidades tem me deixado bastante feliz com os resultados que tenho obtido. Agradeço muito a equipe que a desenvolveu pois este projeto é capaz de mudar a realidade financeira de muitas pessoas. Anny, eu te amo!"
-                }
-            },
-            "try": {
-                "title": "Experimente a Anny gratis por 7 dias",
-                "description": "Sem cartão de crédito, sem comissões, cancele a qualquer momento.",
-                "label_button": "Experimente agora"
             }
         },
         "team": {
-            "title": "Conheça a equipe",
-            "description": "A Anny é um robô, mas por trás dessa tecnologia existe uma equipe de humanos saudáveis, criativos e comprometidos com a qualidade do trabalho."
-        },
-        "terms": {
-            "title": "Termos e condições de uso"
-        },
-        "privacy": {
-            "title": "Política de privacidade"
+            "title": "Hãy gặp gỡ chúng tôi",
+            "description": "Đằng sau mỗi con AI là đội ngũ những cá nhận sáng tạo",
+            "sub_founder": "Nhà sáng lập và CEO",
+            "sub_finance": "Đồng sáng lập và lãnh đạo kinh tế luật pháp",
+            "sub_developmen": "Đồng sáng lập và phát triển",
+            "sub_operation": "Trưởng phòng sản xuất",
+            "sub_parternship": "Trưởng phòng kinh doanh"
         },
         "footer": {
-            "made_with": "Feito com 🧡 por",
-            "local": "Em Amsterdã, NL",
-            "responsibly": "Somos responsáveis com seus dados",
-            "you_can_pay": "Você pode pagar com",
+            "made_with": "Được sản xuất 🧡 bởi",
+            "local": "Trường đại học Duy Tân, Đà Nẵng",
+            "responsibly": "Chúng tôi sẽ xử lí dữ liệu",
+            "you_can_pay": "Bạn có thể trả phí để dùng",
             "copyright" : "© 2019. Todos os direitos reservados.",
             "nav_link": {
-                "youtube": "Canal no YouTube",
-                "terms": "Termos de uso",
-                "privacy": "Privacidade",
-                "team": "Equipe",
-                "contact_us": "Contato"
-            }
-        },
-        "user": {
-            "title": "PT_USER PAGE"
-        },
-        "partner": {
-            "footer" : {
-                "head1": "Você é um desenvolvedor?",
-                "head2": "Dê vida ao seu projeto de negociação com nosso Exchange Hub",
-                "list": {
-                    "item1": {
-                        "head": "CUBO DE TROCA DE CRIPTO",
-                        "body": "Com o nosso hub, você se conecta e realiza transações com várias trocas criptográficas com um único protocolo de API."
-                    },
-                    "item2": {
-                        "head": "COLEÇÃO API DE SINAL",
-                        "body": "Distribua seus sinais e envie chamadas de acompanhamento para recompra, lucro e parada final."
-                    },
-                    "item3": {
-                        "head": "COLEÇÃO API DE PEDIDOS",
-                        "body": "Com a coleta de pedidos, as negociações não são vinculadas a um sinal e você pode automatizar."
-                    }
-                }
-            },
-            "mainSection": {
-                "head": "Monetize seus sinais de criptografia",
-                "content": "Você é um comerciante profissional e foi um histórico incrível para detectar sinais? Anny ajuda você a criar sua comunidade, comercializar, distribuir e negociar os sinais que você cria.",
-                "cardStartup": {
-                    "head": "MONETIZE SEUS SINAIS",
-                    "body": "O usuário Anny receberá pagamentos pelos seus sinais. Desenvolver novos clientes e reter os existentes."
-                },
-                "cardWhale": {
-                    "head": "COMÉRCIO COMO UMA BALEIA",
-                    "body": "Use o poder de compra de seus assinantes para confirmar uma quebra de sinal."
-                },
-                "cardControl": {
-                    "head": "OFERTA CONTROLE REMOTO",
-                    "body": "Use o controle remoto para fazer uma chamada de sinal para vender, alterar o stop loss final ou comprar novamente."
-                },
-                "button": "VAMOS COMEÇAR"
-            },
-            "BecomePremium": {
-                "item1": {
-                    "head": "COMISSÃO RECORRENTE",
-                    "body": "Bruto sobre a taxa de assinatura de cada membro."
-                },
-                "item2": {
-                    "head": "ASSINANTES MÍNIMOS",
-                    "body": "Ou 50% de adoção comprovada em Anny."
-                },
-                "listBenefit": {
-                    "item1": "✔︎ Abra um fluxo de receita adicional",
-                    "item2": "✔︎ Acompanhe o desempenho do seu sinal",
-                    "item3": "✔︎ Acompanhe o desempenho de seus membros",
-                    "item4": "✔︎ Acompanhe sua receita",
-                    "item5": "✔︎ Linha de suporte premium"
-                },
-                "apply": {
-                    "head": "Você tem o que é preciso para se tornar um parceiro premium?",
-                    "textLink": "APLIQUE AGORA",
-                    "desc": "Adoraríamos receber notícias suas 😉."
-                }
-            },
-            "telegram": {
-                "signal": {
-                    "title": "Crie um novo grupo de sinais em menos de 5 minutos",
-                    "step1": "INSCREVA-SE NO PLANO PRO",
-                    "step2": "CONFIGURAR SEU GRUPO DE SINAIS",
-                    "step3": "COMECE A CONVIDAR MEMBROS"
-                },
-                "channel": {
-                    "title": "Anny ajuda você a gerenciar seu canal de telegrama.",
-                    "subTitle": "Anny está totalmente integrado no Telegram para ajudá-lo a distribuir, analisar, reportar e gerenciar os membros do seu canal.",
-                    "box1": "LEIA SINAIS DO SEU CANAL",
-                    "box2": "DISTRIBUIR APENAS PARA MEMBROS DO CANAL",
-                    "box3": "POSTAR RESULTADOS EM SEU CANALL"
-                }
+                "youtube": "kênh YouTube",
+                "terms": "Hạn sử dụng",
+                "privacy": "Điều khoản",
+                "team": "Meca",
+                "contact_us": "Liên lạc với chúng tôi"
             }
         }
     }
