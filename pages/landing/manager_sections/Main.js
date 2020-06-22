@@ -1,17 +1,21 @@
-import i18n from 'i18next';
-import Header from '../components/Header';
-import "./Main.scss"
-import axios from "axios"
-class Main extends React.Component {
-    
-
-    render() {
-        return (
-            <div className="main_section container"> 
-            
-            </div>
-        );
-    }
+import React, { useEffect } from "react";
+import TableStudent from "./component/tableStudent"
+import Sidebar from "./component/SideBar";
+import { Row, Col } from "react-bootstrap";
+import "./Manage.scss"
+export default function Main() {
+  
+  return (
+    <div className="manager_section">
+      <Row>
+        <Col xs={2} id="sidebar-wrapper" class="side-bar">
+          <Sidebar />
+        </Col>
+        <Col xs={9} id="page-content-wrapper">
+            <TableStudent/>
+        </Col>
+      </Row>
+    </div>
+  );
 }
 
-export default Main;

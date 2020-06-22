@@ -1,0 +1,78 @@
+/*viet cho cardTeacher*/
+.card{
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    height: 250px;
+    background-color: transparent;
+    padding-top: 10px;
+    color: black
+}
+.title-name{
+    font-weight: bold;
+    font-family: 'Abril Fatface'
+}
+.img-cus{
+    max-width: 50%;
+    border-radius: 50%;
+    border: solid 1px;
+    margin: 5px auto;
+}
+/*view cho search bar*/
+.form-cus-boder{
+    border: none;
+}
+.input-cus{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    cursor: pointer; 
+    border-radius: 0;
+    background-color: transparent;
+}
+/*viet cho sidebar background*/
+.sidebar-cus{
+    color: black;
+    min-height: 650px;
+    background-color: #ffffff;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+ul,li{
+    list-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hr-cus{
+    border:1px solid white;
+}
+.li-cus{
+    text-align: center;
+    &:hover{
+        border: 1px solid;
+        border-radius: 2px;
+        font-weight: bold;
+        box-shadow:   2px 2px 10px #888888;
+    }
+}
+
+.btn_create {
+    color:white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    width: 60%;
+    box-sizing: border-box;
+    background: rgb(102, 93, 195);
+    transition: all 100ms ease-in-out 0s;
+
+}
+
+.btn_upgrade {
+    @extend .btn_create;
+    color: black;
+    background: rgb(242, 242, 248);
+}

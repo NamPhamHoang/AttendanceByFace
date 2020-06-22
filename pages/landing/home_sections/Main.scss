@@ -1,6 +1,9 @@
+
 .main_section {
   position: relative;
   display: block;
+  align-items: center;
+  align-content: center;
   text-align: -webkit-center;
   background-image: url("/images/background_landing_top.jpg");
   padding-top: 95px;
@@ -21,7 +24,6 @@
     max-width: 820px;
     padding: 50px 35px 20px 35px;
     margin: -60px 20px 0px 20px;
-    position: inherit;
   }
 
   .title {

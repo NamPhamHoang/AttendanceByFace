@@ -29,7 +29,7 @@ module.exports.PostLogin = async(req,res) => {
                 res.status(500).send({
                     error: ['Wrong password']
                 })
-                res.redirect('/')
+                res.redirect('/manage')
             }
         }
     })

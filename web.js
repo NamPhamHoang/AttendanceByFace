@@ -110,7 +110,7 @@ app.prepare().then(() => {
     return await render(req,res, 'en',  '/landing/partner')
   })
   //login page post method 
-  server.post('/partner', LoginController.PostLogin,  )
+  server.post('/partner', LoginController.PostLogin)
 
   //home page
   server.get('/', async (req, res) => {
@@ -118,7 +118,7 @@ app.prepare().then(() => {
   }) 
 
   //manage page
-  server.get('/manage', async (req,res) => {
+  server.get('/manage', LoginController.authLogin,async (req,res) => {
     return await render(req, res, 'en', '/landing/manage')
   })
   
