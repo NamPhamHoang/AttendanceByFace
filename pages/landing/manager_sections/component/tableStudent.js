@@ -1,18 +1,16 @@
 import React from "react";
 import "./tableStudent.scss"
-export default function tableStudent() {
+export default  () =>  {
   return (
     <div className="col-11 wrap-tb card-body">
       <div className="table-responsive">
-        <table class="table tablesorter">
-          <thead class=" thead-dark text-primary">
+        <table className="table tablesorter">
+          <thead className=" thead-dark text-primary">
             <tr className="tb-head">
               <th className="number-oder" scope="col ">NumOder</th>
               <th scope="col">fullName</th>
               <th scope="col">studenID</th>
-              <th scope="col">day one</th>
-             
-                
+              <th scope="col">day one</th>    
             </tr>
           </thead>
           <tbody>

@@ -67,29 +67,15 @@ class Header extends React.Component {
         script.src = "/js/smooth-scroll.polyfills.min.js";
         script.async = true;
         document.body.appendChild(script);
-
-        /**
-         * Init the object. Pass the object the array of elements
-         * that we want to change when the scroll goes down
-         */
         this.myNavBar.init([
             "header",
             "header-container",
             "brand"
         ]);
-
-        /**
-         * bind to the document scroll detection
-         */
         let context = this;
         window.onscroll = function (e) {
             context.offSetManager();
         }
-
-        /**
-         * We have to do a first detectation of offset because the page
-         * could be load with scroll down set.
-         */
         context.offSetManager();
     }
 
@@ -165,7 +151,7 @@ class Header extends React.Component {
                                     <NavLink href="javascript:void(0)" onClick={() => this.handleContactUs()}>{i18n.t("landing:mainpage.menu.contactus")}</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="try" href="https://t.me/AnnyDeCrypto_bot" target="_blank">{i18n.t("landing:mainpage.mainbox.label_button")}</NavLink>
+                                    <NavLink className="try" href="http://localhost:4000/partner" target="_blank">{i18n.t("landing:mainpage.mainbox.label_button")}</NavLink>
                                 </NavItem>
                                 <UncontrolledDropdown nav inNavbar className="language">
                                     <DropdownToggle nav caret>{lang}</DropdownToggle>

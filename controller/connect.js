@@ -5,7 +5,9 @@ const { Client } = require('pg');
 const router = express.Router()
 
   
-router.get('/datastudent' , async(req,res) => {
+router.get('/datastudent', async(req,res) => {
+    let classId = req.query
+    console.log(classId.classId)
     const client = new Client({
         user: 'postgres',
         host: '172.21.0.2',
@@ -14,9 +16,9 @@ router.get('/datastudent' , async(req,res) => {
         port: 5432,
     });
     await client.connect()
-    const student = await client.query("select * from student")
+    const student = await client.query(`select * from student where class_Id = ${Number(req.query.classId)}`)
     res.send(student.rows)
-})
+})  
 
 router.get('/datateacher' , async(req,res) => {
     const client = new Client({

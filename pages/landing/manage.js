@@ -8,9 +8,9 @@ import React, { useState } from 'react'
 const manage = (props) => {
     return (
         <span>
-            <Header />
+            {/* <Header /> */}
             <Main />
-            <Footer />
+            {/* <Footer /> */}
         </span >
     )
 }

@@ -8,11 +8,11 @@ export default function Main() {
   return (
     <div className="manager_section">
       <Row>
-        <Col xs={2} id="sidebar-wrapper" class="side-bar">
+        <Col xs={2} id="sidebar-wrapper" className="side-bar">
           <Sidebar />
         </Col>
         <Col xs={9} id="page-content-wrapper">
-            <TableStudent/>
+            <TableStudent />
         </Col>
       </Row>
     </div>
