@@ -1,18 +1,22 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState, useCallback} from "react";
 import "./tableStudent.scss"
 import ThemeContext from '../../AppContext'
 import axios from "axios";
 export default  () =>  {
 
-
   const {state,setState} = useContext(ThemeContext)
-
+  const [students, setStudent] = useState([])
+  console.log(state)
   const showStudent = () => {
-   
+   axios(`http://localhost:4000/data/datastudent?classId=${state}`)
+   .then(res => {
+     setStudent(res.data)
+   })
   }
   useEffect(()=>{
-    
-  })
+    if(state)
+      showStudent()
+  },[state])
 
   return (
     <div className="col-11 wrap-tb card-body">
@@ -27,24 +31,17 @@ export default  () =>  {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
+            {students.length !== 0 
+            ? students.map(student => {
+              return (<tr>
+              <th scope="row" key={student.student_id}>1</th>
+              <td>{student.student_name}</td>
+              <td>{student.student_id}</td>
               <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            </tr>)
+            })
+            : <p></p>
+          }
           </tbody>
         </table>
       </div>

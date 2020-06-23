@@ -4,7 +4,7 @@ import ThemeContext from '../../AppContext'
 import axios from 'axios'
 export default  (props) =>  {
     const [courses, setCourse]  = useState([])
-    const [class_id, setClassId] = useState(null)
+    const [class_id, setClassId] = useState(1)
     const {state,setState} = useContext(ThemeContext)
     const getInfoTeacher =  () => {     
          axios("http://localhost:4000/data/dataclass")
@@ -30,4 +30,4 @@ export default  (props) =>  {
                 )}      
         </>
     )
-}
+}   
