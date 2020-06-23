@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import "./sideBar.scss";
 import SearchSideBar from "./SearchSideBar";
 import CardTeacher from "./CartTeacher";
 import SubjectCodes from "./SubjectCodes";
-export default class SideBar extends Component {
 
-  render() {
+export default (props) => {
     return (
       <div className="sidebar sidebar-cus">
         <div className="sidebar-wrapper">
@@ -19,4 +18,4 @@ export default class SideBar extends Component {
       </div>
     );
   }
-}
+

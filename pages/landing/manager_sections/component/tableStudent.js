@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "./tableStudent.scss"
+import ThemeContext from '../../AppContext'
+import axios from "axios";
 export default  () =>  {
+
+
+  const {state,setState} = useContext(ThemeContext)
+
+  const showStudent = () => {
+   
+  }
+  useEffect(()=>{
+    
+  })
+
   return (
     <div className="col-11 wrap-tb card-body">
       <div className="table-responsive">
