@@ -6,7 +6,6 @@ const router = express.Router()
 
 router.get('/datastudent', async(req,res) => {
     let classId = req.query
-    console.log(classId.classId)
     const client = new Client({
         user: 'postgres',
         host: '172.21.0.2',
@@ -20,6 +19,7 @@ router.get('/datastudent', async(req,res) => {
 })  
 
 router.get('/datateacher' , async(req,res) => {
+    // sao lai co 2 doan code trung the nay?
     const client = new Client({
         user: 'postgres',
         host: '172.21.0.2',
@@ -33,6 +33,9 @@ router.get('/datateacher' , async(req,res) => {
 })
 
 router.get('/dataclass' , async(req,res) => {
+    // dua cai nay len dau dung chung.
+    // gio muon lam cai gi mo ta di
+
     const client = new Client({
         user: 'postgres',
         host: '172.21.0.2',
@@ -52,8 +55,8 @@ router.post('/api/attendance', (req, res) => {
         if(id.match(/^[0-9]{4}$/))
             update(id)
     });
-
  })
+
 
  const update = async (mssv) => {
     const client = new Client({

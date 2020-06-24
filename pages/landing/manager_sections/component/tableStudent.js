@@ -53,7 +53,7 @@ export default  () =>  {
                   <th scope="row" key={student.student_id}>1</th>
                   <td>{student.student_name}</td>
                   <td>{student.student_id}</td>
-                  <td>@mdo</td>
+                  <td>{student.attendance_score}</td>
                 </tr>)
                 })
                 : <p></p>
