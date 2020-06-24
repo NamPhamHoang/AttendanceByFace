@@ -16,12 +16,12 @@ import './attendance.scss'
                   <div className="container_confirm" id="confirm">
                      <canvas id = "context" width = "650" height = "650"></canvas>
                      <div className = "btn_confirm">
-                        <button className="btn btn-success" id="btn_use">USE</button>
+                        <button className="btn btn-success" id="btn_use">Recognite</button>
                         <button className="btn btn-Secondary" id="btn_another">ANOTHER </button>
                      </div>
                   </div>
                   <video id="video" className="col-sm-10" width="970" height="970" autoPlay></video>
-               </div>    
+               </div>
                <ScriptTag isHydrating={true} type="text/javascript" src="faceapi" />
                <ScriptTag isHydrating={true} type="text/javascript" src="recog" />
             </>

@@ -45,18 +45,27 @@ router.get('/dataclass' , async(req,res) => {
     res.send(student.rows)
 })
 
-//getPostAPI
-var array = []
 router.post('/api/attendance', (req, res) => {
-  array = req.body
-  console.log(typeof(array))
-})
-router.get('/api/attendance', (req, res) => {
-  if(array.length !== 0 )
-     res.send(array)
-     else 
-        res.send(array)
-})
+    const data = req.body
+    data.forEach(student => {
+        var id = student.substring(student.length - 4, student.length);
+        if(id.match(/^[0-9]{4}$/))
+            update(id)
+    });
 
+ })
+
+ const update = async (mssv) => {
+    const client = new Client({
+        user: 'postgres',
+        host: '172.21.0.2',
+        database: 'CDIO_2',
+        password: 'postgres',
+        port: 5432,
+    });
+    await client.connect()
+    await client.query(`update student set attendance_score = (attendance_score::integer + 1 ) where student_id = ${mssv}`)
+    
+ } 
 module.exports = router
 
