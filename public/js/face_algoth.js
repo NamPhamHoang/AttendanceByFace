@@ -111,7 +111,7 @@ document.getElementById('btn_snap').addEventListener("click", ()=>{
     results.forEach((result, i) => {
       const box = resizedDetections[i].detection.box
       const drawBox = new faceapi.draw.DrawBox(box, { label: result.toString() })
-      console.log(result.label)
+      // console.log(result.label)
       attendance.push(result.label)
       drawBox.draw(canvas)
       })
@@ -141,7 +141,7 @@ function loadLabeledImages() {
 
 
 function fetchData(arrays) {
-  fetch("http://localhost:4000/data/datastudent", {
+  fetch("http://localhost:4000/data/api/attendance", {
     method: 'POST',
     headers: {
       'Content-Type' : 'application/json'

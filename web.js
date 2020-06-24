@@ -135,6 +135,7 @@ app.prepare().then(() => {
   server.get('*', async (req, res) => {
     return handle(req, res)
   })
+
   
   
   // Obtém as portas para iniciar o servidor web

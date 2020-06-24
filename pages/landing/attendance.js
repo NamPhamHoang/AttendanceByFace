@@ -4,8 +4,6 @@ import React, { useState, useEffect } from 'react';
 import 'react-html5-camera-photo/build/css/index.css';
 import ScriptTag from 'react-script-tag';
 import './attendance.scss'
-import axios from 'axios'
-
 
    const User = (props) => {
          return (

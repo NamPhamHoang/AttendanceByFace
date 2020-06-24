@@ -4,7 +4,6 @@ const { Client } = require('pg');
 
 const router = express.Router()
 
-  
 router.get('/datastudent', async(req,res) => {
     let classId = req.query
     console.log(classId.classId)
@@ -46,10 +45,18 @@ router.get('/dataclass' , async(req,res) => {
     res.send(student.rows)
 })
 
-router.post('/datastudent', (req,res) => {
-    console.log(req.body)
+//getPostAPI
+var array = []
+router.post('/api/attendance', (req, res) => {
+  array = req.body
+  console.log(typeof(array))
 })
-
+router.get('/api/attendance', (req, res) => {
+  if(array.length !== 0 )
+     res.send(array)
+     else 
+        res.send(array)
+})
 
 module.exports = router
 
