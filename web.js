@@ -118,7 +118,7 @@ app.prepare().then(() => {
   }) 
 
   //manage page
-  server.get('/manage', LoginController.authLogin,async (req,res) => {
+  server.get('/manage', LoginController.authLogin, async (req,res) => {
     return await render(req, res, 'en', '/landing/manage')
   })
   

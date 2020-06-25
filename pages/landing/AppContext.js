@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-const defaultValue = {name:"user"}
+import React, { useState } from "react";
+const defaultValue = { name: "user" };
 const ThemeContext = React.createContext(defaultValue);
 
 const AppProvider = (props) => {
@@ -11,6 +11,6 @@ const AppProvider = (props) => {
       {props.children}
     </ThemeContext.Provider>
   );
-} 
+};
 export default ThemeContext;
-export {AppProvider};
+export { AppProvider };

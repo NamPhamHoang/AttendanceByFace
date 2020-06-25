@@ -54,6 +54,12 @@ export default  () =>  {
                   <td>{student.student_name}</td>
                   <td>{student.student_id}</td>
                   <td>{student.attendance_score}</td>
+                  {/* <td>
+                    <div className="stick" 
+                          onClick={ () => setStates({...states,redCheck : !states.redCheck })}
+                          style={{backgroundColor: states.redCheck ? "red" : "green"}}
+                    />
+                  </td> */}
                 </tr>)
                 })
                 : <p></p>

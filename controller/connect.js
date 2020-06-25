@@ -71,4 +71,3 @@ router.post('/api/attendance', (req, res) => {
     
  } 
 module.exports = router
-
