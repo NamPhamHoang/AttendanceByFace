@@ -92,6 +92,7 @@ document.getElementById('btn_snap').addEventListener("click", ()=>{
   })
 
   document.getElementById('btn_use').addEventListener("click", async () => {
+    
     const LabeledFaceDescriptors = await loadLabeledImages()
     const faceMatcher = new faceapi.FaceMatcher(LabeledFaceDescriptors, 0.6)
     const canvas = faceapi.createCanvasFromMedia(img)
@@ -99,7 +100,7 @@ document.getElementById('btn_snap').addEventListener("click", ()=>{
     container.append(canvas)
     var detect_image = document.getElementById("detect")
     detect_image.style.left = "82px"
-    detect_image.style.top = "40px"
+    detect_image.style.top = "45px" 
    
     const displaySize = {width:video.width, height:video.height}
     const detections = await faceapi.detectAllFaces(img)
@@ -114,6 +115,7 @@ document.getElementById('btn_snap').addEventListener("click", ()=>{
       attendance.push(result.label)
       drawBox.draw(canvas)
       })
+    fetchData(attendance)
   })
 })
 
@@ -137,10 +139,20 @@ function loadLabeledImages() {
   )
 }
 
-// function saveData(fileName, data) {
-//   fileManager.createNewFile("temp.txt")
-//   fs.writeFile(fileName, data , (err, data) => {
-//       if(err) throw err;
-//       console.log("Saved to success")
-//   })
-// }
+
+function fetchData(arrays) {
+  fetch("http://localhost:4000/data/datastudent", {
+    method: 'POST',
+    headers: {
+      'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify(arrays)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}

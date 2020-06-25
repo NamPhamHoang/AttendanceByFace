@@ -4,13 +4,10 @@ import React, { useState, useEffect } from 'react';
 import 'react-html5-camera-photo/build/css/index.css';
 import ScriptTag from 'react-script-tag';
 import './attendance.scss'
-   const start = () => {
-     
-   }
+import axios from 'axios'
+
+
    const User = (props) => {
-      useEffect(() => {
-        start()
-      })
          return (
             <>
                <div className = "container_camera row">
@@ -22,7 +19,7 @@ import './attendance.scss'
                      <canvas id = "context" width = "650" height = "650"></canvas>
                      <div className = "btn_confirm">
                         <button className="btn btn-success" id="btn_use">USE</button>
-                        <button className="btn btn-Secondary" id="btn_another">ANOTHER</button>
+                        <button className="btn btn-Secondary" id="btn_another">ANOTHER </button>
                      </div>
                   </div>
                   <video id="video" className="col-sm-10" width="970" height="970" autoPlay></video>
