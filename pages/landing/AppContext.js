@@ -3,7 +3,8 @@ const defaultValue = { name: "user" };
 const ThemeContext = React.createContext(defaultValue);
 
 const AppProvider = (props) => {
-  const objectCodes = [{id:1, title:"ddat"},{id:2, title:"bshbad"},{id:3, title:"mdasby"}]
+  
+  const [objectCodes, setObjectCodes] = useState([])
   const [search, setSearch] = useState({
     objectCodes : objectCodes,
     redCheck:false,
@@ -14,15 +15,15 @@ const AppProvider = (props) => {
     const filter = event.target.value
     const items = objectCodes.filter((data)=>{
       if(filter == null)
-          return data
-      else if(data.title.toLowerCase().includes(filter.toLowerCase())){
-          return data
+          return data.class_name
+      else if(data.class_name.toLowerCase().includes(filter.toLowerCase())){
+          return data.class_name
       }
     })
-    setSearch({...search, objectCodes: items})
+    setSearch({...search  , objectCodes: items})
   };
   return (   
-    <ThemeContext.Provider value={{state, setState, amount, setAmount, search, setSearch, handleChangeSearch}}>
+    <ThemeContext.Provider value={{state, setState, amount, setAmount, search, setSearch, objectCodes, setObjectCodes, handleChangeSearch}}>
       {props.children}
     </ThemeContext.Provider>
   );
