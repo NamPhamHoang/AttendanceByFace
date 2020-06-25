@@ -20,13 +20,15 @@ table th{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: red;
+    background-color: blue;
     cursor: pointer;
     margin: 0 auto;
     &:hover{
         -webkit-box-shadow: 1px 1px 31px 0px rgba(0,0,0,0.93); 
         box-shadow: 1px 1px 31px 0px rgba(0,0,0,0.93);
-    }
-   
-    
+    }  
+}
+.unStick {
+    @extend .stick;
+    background-color: red;
 }

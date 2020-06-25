@@ -4,7 +4,7 @@ const ThemeContext = React.createContext(defaultValue);
 
 const AppProvider = (props) => {
   
-  const [objectCodes, setObjectCodes] = useState([])
+  const [objectCodes, setObjectCodes] = useState(["CDIO", "Testing"])
   const [search, setSearch] = useState({
     objectCodes : objectCodes,
     redCheck:false,

@@ -48,16 +48,22 @@ router.get('/dataclass' , async(req,res) => {
     res.send(student.rows)
 })
 
+//update database when recognizing
+var arrays = []
 router.post('/api/attendance', (req, res) => {
     const data = req.body
     data.forEach(student => {
         var id = student.substring(student.length - 4, student.length);
-        if(id.match(/^[0-9]{4}$/))
+        if(id.match(/^[0-9]{4}$/)){
             update(id)
+            arrays.push(id)
+        }   
     });
  })
 
-
+ router.get('/api/attendance', (req,res) => {
+     res.send(arrays)
+ })
  const update = async (mssv) => {
     const client = new Client({
         user: 'postgres',
@@ -68,6 +74,5 @@ router.post('/api/attendance', (req, res) => {
     });
     await client.connect()
     await client.query(`update student set attendance_score = (attendance_score::integer + 1 ) where student_id = ${mssv}`)
-    
  } 
 module.exports = router

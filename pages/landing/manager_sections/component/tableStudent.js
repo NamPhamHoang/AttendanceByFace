@@ -6,6 +6,9 @@ export default  () =>  {
   const {state, amount} = useContext(ThemeContext)
   const [students, setStudent] = useState([])
   const [loading, setLoaing] = useState(true)
+  const [mark, setMark] = useState([])
+
+  //show student in class
   const showStudent = () => {
    axios(`http://localhost:4000/data/datastudent?classId=${state}`)
    .then(res => {
@@ -13,9 +16,18 @@ export default  () =>  {
      setLoaing(false)
    })
   }
+
+  //mark student who attendance
+  const markStudent = () => {
+    axios("http://localhost:4000/data/api/attendance")
+    .then(res => {
+      setMark(res.data)
+    })
+  }
   useEffect(()=>{
     if(state){
       showStudent()
+      markStudent()
     }
      
   },[state])
@@ -42,7 +54,8 @@ export default  () =>  {
                 <tr className="tb-head">
                   <th className="number-oder" scope="col ">NumOder</th>
                   <th scope="col">fullName</th>
-                  <th scope="col">studenID</th>
+                  <th scope="col">studen ID</th>
+                  <th scope="col">Attendance score</th>
                   {listClass().length!==0 ? listClass().map(ele => (<th>day {ele} </th>)):<h1>loading</h1>}
                 </tr>
               </thead>
@@ -60,6 +73,17 @@ export default  () =>  {
                           style={{backgroundColor: states.redCheck ? "red" : "green"}}
                     />
                   </td> */}
+                  {
+                    mark?mark.map(ele => {
+                      if(Number(ele.substring(ele.length - 4, ele.length))==student.student_id) {
+                        return (<div className="stick"></div>)
+                      }
+                      else{
+                        return <div className="unStick"></div>
+                      }
+                    })
+                    : <p>Nothing</p>
+                  }
                 </tr>)
                 })
                 : <p></p>
